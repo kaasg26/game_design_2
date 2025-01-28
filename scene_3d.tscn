@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://b5g0w2nxxhako"]
+
+[ext_resource type="Script" path="res://player_3d.gd" id="1_1s5jt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m4614"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_rhhyb"]
+sky_material = SubResource("ProceduralSkyMaterial_m4614")
+
+[sub_resource type="Environment" id="Environment_f0wmu"]
+background_mode = 2
+sky = SubResource("Sky_rhhyb")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wos68"]
+albedo_color = Color(0.0808793, 0.306588, 7.21961e-07, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kk6b0"]
+material = SubResource("StandardMaterial3D_wos68")
+size = Vector2(500, 500)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0bv8x"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8ii5d"]
+
+[node name="scene_3d" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_f0wmu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+use_collision = true
+mesh = SubResource("PlaneMesh_kk6b0")
+
+[node name="player3d" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17881, 0)
+script = ExtResource("1_1s5jt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player3d"]
+mesh = SubResource("CapsuleMesh_0bv8x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player3d"]
+shape = SubResource("CapsuleShape3D_8ii5d")
+
+[node name="Head" type="Node3D" parent="player3d"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.551868, 0)
+
+[node name="Camera3D" type="Camera3D" parent="player3d/Head"]
+current = true
+fov = 90.3
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.26687, 12.0746)
