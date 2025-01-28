@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=10 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="Script" path="res://player_3d.gd" id="1_1s5jt"]
 
@@ -24,6 +24,9 @@ size = Vector2(500, 500)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_0bv8x"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8ii5d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1gf3o"]
+albedo_color = Color(0, 0.12549, 0.317647, 1)
 
 [node name="scene_3d" type="Node3D"]
 
@@ -57,3 +60,21 @@ fov = 90.3
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.26687, 12.0746)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02633, 0, -1.12231)
+use_collision = true
+size = Vector3(4.82007, 1, 3.24463)
+material = SubResource("StandardMaterial3D_1gf3o")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.973235, 0, -0.229812, 0, 1, 0, 0.229812, 0, 0.973235, 11.4355, 0.686143, -1.12231)
+use_collision = true
+size = Vector3(4.82007, 1.51672, 3.24463)
+material = SubResource("StandardMaterial3D_1gf3o")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.905532, 0, -0.424278, 0, 1, 0, 0.424278, 0, 0.905532, 10.19, 1.1944, -6.56494)
+use_collision = true
+size = Vector3(7.98767, 1.51672, 3.24463)
+material = SubResource("StandardMaterial3D_1gf3o")
