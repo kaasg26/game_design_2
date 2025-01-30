@@ -1,13 +1,25 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=21 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
+[ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ryuxh"]
+[ext_resource type="Texture2D" uid="uid://dpqa0ntx6juut" path="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_Color.jpg" id="7_my5w5"]
+[ext_resource type="Texture2D" uid="uid://bkwqnu7wj27kb" path="res://textures/Metal047B_1K-JPG/Metal047B_1K-JPG_Color.jpg" id="8_bkwsw"]
+[ext_resource type="Texture2D" uid="uid://q8x5aqflpya3" path="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_Color.jpg" id="8_dqb2l"]
+[ext_resource type="Texture2D" uid="uid://cds284ppgxd6s" path="res://textures/Travertine013_1K-JPG/Travertine013_1K-JPG_Color.jpg" id="8_qpbrj"]
+[ext_resource type="Texture2D" uid="uid://d4h0v8pj2e1vu" path="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_NormalGL.jpg" id="11_dikum"]
+[ext_resource type="Texture2D" uid="uid://cyd032b28b6ae" path="res://textures/Metal047B_1K-JPG/Metal047B_1K-JPG_NormalGL.jpg" id="12_aegjb"]
+[ext_resource type="Texture2D" uid="uid://cqc4v3jiq3jvk" path="res://textures/Travertine013_1K-JPG/Travertine013_1K-JPG_NormalGL.jpg" id="12_g4fe0"]
+[ext_resource type="Texture2D" uid="uid://rr2yci4uymhf" path="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_NormalGL.jpg" id="12_o07nk"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m4614"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_31ngt"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbisf"]
+panorama = SubResource("CompressedTexture2D_31ngt")
 
 [sub_resource type="Sky" id="Sky_rhhyb"]
-sky_material = SubResource("ProceduralSkyMaterial_m4614")
+sky_material = SubResource("PanoramaSkyMaterial_gbisf")
 
 [sub_resource type="Environment" id="Environment_f0wmu"]
 background_mode = 2
@@ -24,6 +36,11 @@ size = Vector2(500, 500)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1gf3o"]
 albedo_color = Color(0, 0.12549, 0.317647, 1)
 
+[sub_resource type="Resource" id="Resource_asyxd"]
+script = ExtResource("4_ryuxh")
+mode = 0
+textures = [[ExtResource("7_my5w5"), ExtResource("8_qpbrj"), ExtResource("8_bkwsw"), ExtResource("8_dqb2l")], [ExtResource("11_dikum"), ExtResource("12_g4fe0"), ExtResource("12_aegjb"), ExtResource("12_o07nk")]]
+
 [node name="scene_3d" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -34,7 +51,7 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
-use_collision = true
+visible = false
 mesh = SubResource("PlaneMesh_kk6b0")
 
 [node name="player3d" parent="." instance=ExtResource("1_gia1x")]
@@ -74,7 +91,26 @@ size = Vector3(9.24823, 4.5274, 6.57141)
 material = SubResource("StandardMaterial3D_1gf3o")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="."]
-transform = Transform3D(0.981013, 0, 0.193943, 0, 1, 0, -0.193943, 0, 0.981013, -9.07753, 3.18949, -8.31796)
+transform = Transform3D(0.981013, 0, 0.193943, 0, 1, 0, -0.193943, 0, 0.981013, -8.97554, 3.18949, -7.80205)
 use_collision = true
-size = Vector3(9.24823, 0.327177, 2.01862)
+size = Vector3(9.24823, 0.327177, 0.96683)
 material = SubResource("StandardMaterial3D_1gf3o")
+
+[node name="HTerrain" type="Node3D" parent="."]
+script = ExtResource("2_h7qau")
+centered = true
+_terrain_data = ExtResource("3_n3epc")
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_asyxd")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = null
+shader_params/u_tile_reduction = null
