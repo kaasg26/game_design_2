@@ -19,6 +19,8 @@ const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
+var intertia = Vector3.ZERO
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -80,6 +82,9 @@ func _physics_process(delta: float) -> void:
 	
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = headbob(t_bob)
+
+	velocity += intertia
+	intertia = intertia.move_toward(Vector3.ZERO, delta*1000.0)
 
 	move_and_slide()
 
