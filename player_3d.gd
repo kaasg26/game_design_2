@@ -19,7 +19,13 @@ const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
-var intertia = Vector3.ZERO
+var inertia = Vector3.ZERO
+var MAX_HEALTH = 50
+var HEALTH = MAX_HEALTH
+var damage_lock = 0.0
+
+@onready var HUD = get_tree().get_first_node_in_group("HUD")
+
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -83,10 +89,31 @@ func _physics_process(delta: float) -> void:
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = headbob(t_bob)
 
-	velocity += intertia
-	intertia = intertia.move_toward(Vector3.ZERO, delta*1000.0)
+	velocity += inertia
+	inertia = inertia.move_toward(Vector3.ZERO, delta*1000.0)
+	damage_lock = max(damage_lock-delta, 0.0)
+
+	for enemy in get_tree().get_nodes_in_group("Enemy"):
+		if $Feet.overlaps_area(enemy.dmg_area):
+			enemy.take_damage(0)
+
+	HUD.healthbar.max_value = MAX_HEALTH
+	HUD.healthbar.value = int(HEALTH)
 
 	move_and_slide()
+
+
+func take_damage(dmg):
+	if damage_lock == 0.0:
+		damage_lock = 0.5
+		HEALTH -= dmg
+		if HEALTH <= 0:
+			await get_tree().create_timer(0.25).timeout
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			OS.alert("You Died...")
+			get_tree().reload_current_scene()
+
+
 
 func toggle_camera_parent():
 	var parent = "Head"

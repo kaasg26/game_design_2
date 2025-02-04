@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=24 format=3 uid="uid://b5g0w2nxxhako"]
 
+[ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="1_api54"]
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
 [ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
@@ -46,6 +47,8 @@ textures = [[ExtResource("7_my5w5"), ExtResource("8_qpbrj"), ExtResource("8_bkws
 [sub_resource type="NavigationMesh" id="NavigationMesh_878e5"]
 
 [node name="scene_3d" type="Node3D"]
+
+[node name="playerhud_3d" parent="." instance=ExtResource("1_api54")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_f0wmu")
