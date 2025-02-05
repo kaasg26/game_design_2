@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1sa5ur0m7xqq"]
+[gd_scene load_steps=6 format=3 uid="uid://d1sa5ur0m7xqq"]
 
 [ext_resource type="Script" path="res://player_3d.gd" id="1_ya3wg"]
+[ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="2_q2jxf"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_0bv8x"]
 
@@ -10,6 +11,8 @@
 
 [node name="player3d" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_ya3wg")
+
+[node name="playerhud_3d" parent="." instance=ExtResource("2_q2jxf")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_0bv8x")

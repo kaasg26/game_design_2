@@ -1,6 +1,5 @@
 [gd_scene load_steps=24 format=3 uid="uid://b5g0w2nxxhako"]
 
-[ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="1_api54"]
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
 [ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
@@ -14,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cqc4v3jiq3jvk" path="res://textures/Travertine013_1K-JPG/Travertine013_1K-JPG_NormalGL.jpg" id="12_g4fe0"]
 [ext_resource type="Texture2D" uid="uid://rr2yci4uymhf" path="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_NormalGL.jpg" id="12_o07nk"]
 [ext_resource type="PackedScene" uid="uid://cn0ralhlgeur2" path="res://enemy_3d.tscn" id="13_7y8r6"]
+[ext_resource type="PackedScene" uid="uid://c8dcjsvplatky" path="res://goal.tscn" id="14_8cfaq"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbisf"]
 panorama = ExtResource("8_qpbrj")
@@ -47,8 +47,6 @@ textures = [[ExtResource("7_my5w5"), ExtResource("8_qpbrj"), ExtResource("8_bkws
 [sub_resource type="NavigationMesh" id="NavigationMesh_878e5"]
 
 [node name="scene_3d" type="Node3D"]
-
-[node name="playerhud_3d" parent="." instance=ExtResource("1_api54")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_f0wmu")
@@ -175,3 +173,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.5129, 1.68033, 28.8037)
 
 [node name="enemy3d3" parent="." instance=ExtResource("13_7y8r6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81329, 1.29611, -22.5108)
+
+[node name="Goal" parent="." instance=ExtResource("14_8cfaq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5665, 0.178226, -18.3186)
+next_level = "hello"

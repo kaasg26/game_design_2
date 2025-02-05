@@ -24,7 +24,8 @@ var MAX_HEALTH = 50
 var HEALTH = MAX_HEALTH
 var damage_lock = 0.0
 
-@onready var HUD = get_tree().get_first_node_in_group("HUD")
+@onready var HUD = $playerhud_3d
+var dmg_shader = preload("res://shaders/take_damage.gdshader")
 
 
 func _ready() -> void:
@@ -99,6 +100,8 @@ func _physics_process(delta: float) -> void:
 
 	HUD.healthbar.max_value = MAX_HEALTH
 	HUD.healthbar.value = int(HEALTH)
+	if damage_lock == 0.0:
+		HUD.dmg_overlay.material = null
 
 	move_and_slide()
 
@@ -107,6 +110,9 @@ func take_damage(dmg):
 	if damage_lock == 0.0:
 		damage_lock = 0.5
 		HEALTH -= dmg
+		var dmg_intensity = clamp(1.0-((HEALTH+0.1)/MAX_HEALTH), 0.1, 0.8)
+		HUD.dmg_overlay.material = dmg_shader.duplicate()
+		HUD.dmg_overlay.material.set_shader_parameter("intensity", dmg_intensity)
 		if HEALTH <= 0:
 			await get_tree().create_timer(0.25).timeout
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
