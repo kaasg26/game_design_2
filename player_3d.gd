@@ -25,7 +25,7 @@ var HEALTH = MAX_HEALTH
 var damage_lock = 0.0
 
 @onready var HUD = $playerhud_3d
-var dmg_shader = preload("res://shaders/take_damage.gdshader")
+var dmg_shader = preload("res://shaders/take_damage.tres")
 
 
 func _ready() -> void:
@@ -102,6 +102,9 @@ func _physics_process(delta: float) -> void:
 	HUD.healthbar.value = int(HEALTH)
 	if damage_lock == 0.0:
 		HUD.dmg_overlay.material = null
+
+	if self.global_position.y <= -50:
+		take_damage(HEALTH)
 
 	move_and_slide()
 

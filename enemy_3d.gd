@@ -22,4 +22,7 @@ func _physics_process(delta: float) -> void:
 											.normalized() * KNOCKBACK
 	var dir = (nav_agent.target_position-self.global_position).normalized()
 	velocity = velocity.lerp(dir * SPEED, ACCEL * delta)
+	
+	
 	move_and_slide()
+	
