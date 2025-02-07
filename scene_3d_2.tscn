@@ -1,18 +1,20 @@
-[gd_scene load_steps=18 format=3 uid="uid://ct2drxrnwqcli"]
+[gd_scene load_steps=20 format=3 uid="uid://ct2drxrnwqcli"]
 
 [ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="1_fqqx2"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_v27od"]
 [ext_resource type="Resource" path="res://terrains/scene_3d_2/data.hterrain" id="3_ert4t"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ugetj"]
-[ext_resource type="Texture2D" uid="uid://v2dxxqei7yea" path="res://textures/Ground075_1K-JPG/Ground075_1K-JPG_Color.jpg" id="5_iw7ix"]
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="5_ooc3w"]
 [ext_resource type="Texture2D" uid="uid://by0mafgaxyivs" path="res://textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016_1K-JPG_Color.jpg" id="6_21m06"]
+[ext_resource type="Texture2D" uid="uid://b3iv067otssty" path="res://textures/Marble016_1K-JPG/Marble016_1K-JPG_Color.jpg" id="6_vbmu8"]
 [ext_resource type="Texture2D" uid="uid://bi5ejm3o4xisj" path="res://textures/Travertine003_1K-JPG/Travertine003_1K-JPG_Color.jpg" id="7_6nm2j"]
 [ext_resource type="Texture2D" uid="uid://bs1imo7ygskw1" path="res://textures/Wood047_1K-JPG/Wood047_1K-JPG_Color.jpg" id="8_lo24y"]
-[ext_resource type="Texture2D" uid="uid://clde4k81fxrk4" path="res://textures/Ground075_1K-JPG/Ground075_1K-JPG_NormalGL.jpg" id="9_csyli"]
+[ext_resource type="Texture2D" uid="uid://dfpvpg4xccvse" path="res://textures/Marble016_1K-JPG/Marble016_1K-JPG_NormalGL.jpg" id="9_cem6u"]
 [ext_resource type="Texture2D" uid="uid://p42mfy3qb3eh" path="res://textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016_1K-JPG_NormalGL.jpg" id="10_k64gf"]
 [ext_resource type="Texture2D" uid="uid://dx6xnj4ii1anb" path="res://textures/Travertine003_1K-JPG/Travertine003_1K-JPG_NormalGL.jpg" id="11_uopxn"]
 [ext_resource type="Texture2D" uid="uid://c1jy41pitxmn3" path="res://textures/Wood047_1K-JPG/Wood047_1K-JPG_NormalGL.jpg" id="12_a8mh2"]
+[ext_resource type="PackedScene" uid="uid://bnpq5sy07ck3p" path="res://push_block.tscn" id="14_urlv0"]
+[ext_resource type="PackedScene" uid="uid://dq6u73k21jffj" path="res://kick_ball.tscn" id="15_wtydg"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_47a6x"]
 panorama = ExtResource("7_6nm2j")
@@ -28,7 +30,7 @@ tonemap_mode = 2
 [sub_resource type="Resource" id="Resource_ngecj"]
 script = ExtResource("4_ugetj")
 mode = 0
-textures = [[ExtResource("5_iw7ix"), ExtResource("6_21m06"), ExtResource("7_6nm2j"), ExtResource("8_lo24y")], [ExtResource("9_csyli"), ExtResource("10_k64gf"), ExtResource("11_uopxn"), ExtResource("12_a8mh2")]]
+textures = [[ExtResource("6_vbmu8"), ExtResource("6_21m06"), ExtResource("7_6nm2j"), ExtResource("8_lo24y")], [ExtResource("9_cem6u"), ExtResource("10_k64gf"), ExtResource("11_uopxn"), ExtResource("12_a8mh2")]]
 
 [node name="scene_3d_2" type="Node3D"]
 
@@ -39,6 +41,7 @@ environment = SubResource("Environment_urn8i")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_negative = true
 shadow_enabled = true
 
 [node name="HTerrain" type="Node3D" parent="."]
@@ -62,3 +65,47 @@ shader_params/u_tile_reduction = null
 
 [node name="player3d" parent="." instance=ExtResource("5_ooc3w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62608, 0)
+
+[node name="push_block" parent="." instance=ExtResource("14_urlv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4261, 3.44507, -2.99583)
+
+[node name="push_block3" parent="." instance=ExtResource("14_urlv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.181, 7.6677, -4.80241)
+
+[node name="push_block4" parent="." instance=ExtResource("14_urlv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.8259, 6.25453, 11.7153)
+
+[node name="push_block2" parent="." instance=ExtResource("14_urlv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4261, 3.44507, -36.4049)
+
+[node name="kick_ball" parent="." instance=ExtResource("15_wtydg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3547, 5.55488, 5.77037)
+
+[node name="kick_ball2" parent="." instance=ExtResource("15_wtydg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3547, 5.55488, 19.9521)
+
+[node name="kick_ball3" parent="." instance=ExtResource("15_wtydg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3547, 5.55488, 63.2059)
+
+[node name="kick_ball4" parent="." instance=ExtResource("15_wtydg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6225, 5.55488, 63.2059)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5803, 4.68823, -3.10072)
+use_collision = true
+size = Vector3(5.87061, 1, 7.17139)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9306, 9.14315, -16.9599)
+use_collision = true
+size = Vector3(5.87061, 1, 7.17139)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.629, 4.89993, -11.8966)
+use_collision = true
+size = Vector3(3.16901, 0.51001, 15.1326)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.629, 5.04277, -19.7265)
+use_collision = true
+size = Vector3(3.16901, 0.893677, 0.959167)

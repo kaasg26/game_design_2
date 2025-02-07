@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=26 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://rr2yci4uymhf" path="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_NormalGL.jpg" id="12_o07nk"]
 [ext_resource type="PackedScene" uid="uid://cn0ralhlgeur2" path="res://enemy_3d.tscn" id="13_7y8r6"]
 [ext_resource type="PackedScene" uid="uid://c8dcjsvplatky" path="res://goal.tscn" id="14_8cfaq"]
+[ext_resource type="PackedScene" uid="uid://dq6u73k21jffj" path="res://kick_ball.tscn" id="15_d8ujn"]
+[ext_resource type="PackedScene" uid="uid://bnpq5sy07ck3p" path="res://push_block.tscn" id="16_880x0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbisf"]
 panorama = ExtResource("8_qpbrj")
@@ -177,3 +179,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81329, 1.29611, -22.5108)
 [node name="Goal" parent="." instance=ExtResource("14_8cfaq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5665, 0.178226, -18.3186)
 next_level = "scene_3d_2"
+
+[node name="kick_ball" parent="." instance=ExtResource("15_d8ujn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5794, 1.7366, 18.7947)
+
+[node name="kick_ball2" parent="." instance=ExtResource("15_d8ujn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8431, 1.67528, 25.865)
+
+[node name="push_block" parent="." instance=ExtResource("16_880x0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.008, 3.0443, 12.8338)

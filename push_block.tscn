@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnpq5sy07ck3p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_j1ppi"]
+size = Vector3(2.5, 2.5, 2.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pnwjb"]
+size = Vector3(2.5, 2.5, 2.5)
+
+[node name="push_block" type="RigidBody3D" groups=["Interact"]]
+mass = 2.25
+lock_rotation = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_j1ppi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_pnwjb")

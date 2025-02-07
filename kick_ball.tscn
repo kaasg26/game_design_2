@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq6u73k21jffj"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q6uyn"]
+radius = 0.49
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cpya7"]
+
+[node name="kick_ball" type="RigidBody3D" groups=["Interact"]]
+mass = 0.75
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_q6uyn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_cpya7")
