@@ -1,8 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=27 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
 [ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
+[ext_resource type="PackedScene" uid="uid://bxdsaqmkyrxgb" path="res://models/japan_market.tscn" id="3_ot6hr"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ryuxh"]
 [ext_resource type="Texture2D" uid="uid://dpqa0ntx6juut" path="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_Color.jpg" id="7_my5w5"]
 [ext_resource type="Texture2D" uid="uid://bkwqnu7wj27kb" path="res://textures/Metal047B_1K-JPG/Metal047B_1K-JPG_Color.jpg" id="8_bkwsw"]
@@ -66,6 +67,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79019, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.26687, 12.0746)
+
+[node name="Japan_Market2" parent="." instance=ExtResource("3_ot6hr")]
+transform = Transform3D(-0.756379, 0, 0.654134, 0, 1, 0, -0.654134, 0, -0.756379, -13.5769, -0.182609, 32.6713)
 
 [node name="PF1-1" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02633, 0, -1.12231)
@@ -171,7 +175,7 @@ navigation_mesh = SubResource("NavigationMesh_878e5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.233952, 2.34066, 21.6219)
 
 [node name="enemy3d2" parent="." instance=ExtResource("13_7y8r6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.5129, 1.68033, 28.8037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.5129, 1.68033, 14.2691)
 
 [node name="enemy3d3" parent="." instance=ExtResource("13_7y8r6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81329, 1.29611, -22.5108)
