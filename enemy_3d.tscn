@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cn0ralhlgeur2"]
+[gd_scene load_steps=9 format=3 uid="uid://cn0ralhlgeur2"]
 
 [ext_resource type="Script" path="res://enemy_3d.gd" id="1_wl3n6"]
+[ext_resource type="PackedScene" uid="uid://dw5g856mb5whe" path="res://models/biped_robot/scene.gltf" id="2_gi7if"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_e4rkf"]
 
@@ -9,12 +10,14 @@ albedo_color = Color(0.559523, 1.27546e-06, 3.36915e-07, 1)
 metallic = 0.7
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iv2dr"]
+radius = 0.450471
+height = 1.43867
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_sa15y"]
 radius = 8.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s567j"]
-radius = 0.75
+radius = 0.527032
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_0eup5"]
 
@@ -24,11 +27,15 @@ script = ExtResource("1_wl3n6")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_e4rkf")
 surface_material_override/0 = SubResource("StandardMaterial3D_sjiu0")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_iv2dr")
+
+[node name="Yellow_Biped" parent="." instance=ExtResource("2_gi7if")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, -0.980549, 0)
 
 [node name="AttackRange" type="Area3D" parent="."]
 
@@ -43,5 +50,5 @@ shape = SubResource("CapsuleShape3D_s567j")
 [node name="DamageArea" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DamageArea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.680009, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00428009, 0.545268, 0.00156665)
 shape = SubResource("SphereShape3D_0eup5")
