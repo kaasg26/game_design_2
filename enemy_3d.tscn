@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cn0ralhlgeur2"]
+[gd_scene load_steps=10 format=3 uid="uid://cn0ralhlgeur2"]
 
 [ext_resource type="Script" path="res://enemy_3d.gd" id="1_wl3n6"]
 [ext_resource type="PackedScene" uid="uid://dw5g856mb5whe" path="res://models/biped_robot/scene.gltf" id="2_gi7if"]
+[ext_resource type="PackedScene" uid="uid://4cqav8djy183" path="res://models/jet-pack._incomplete/scene.gltf" id="3_nvysw"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_e4rkf"]
 
@@ -52,3 +53,6 @@ shape = SubResource("CapsuleShape3D_s567j")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DamageArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00428009, 0.545268, 0.00156665)
 shape = SubResource("SphereShape3D_0eup5")
+
+[node name="jetpack" parent="." instance=ExtResource("3_nvysw")]
+transform = Transform3D(-0.299999, -0.000895353, 2.62268e-08, -0.000891977, 0.298868, 0.0260163, -7.76721e-05, 0.0260162, -0.29887, 0.0129236, -0.203861, -0.261222)

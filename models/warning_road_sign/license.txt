@@ -1,0 +1,11 @@
+Model Information:
+* title:	Warning Road Sign
+* source:	https://sketchfab.com/3d-models/warning-road-sign-e1b8e373eb244f08bd79278936c606bf
+* author:	suicidalkid (https://sketchfab.com/suicidalkid)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Warning Road Sign" (https://sketchfab.com/3d-models/warning-road-sign-e1b8e373eb244f08bd79278936c606bf) by suicidalkid (https://sketchfab.com/suicidalkid) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

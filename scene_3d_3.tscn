@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://44o744e6063t"]
+
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_51grn"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="2_7ajdw"]
+[ext_resource type="Resource" path="res://terrains/scene_3d_3/data.hterrain" id="2_v7b2y"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gytfy"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_r5cuv"]
+sky_material = SubResource("ProceduralSkyMaterial_gytfy")
+
+[sub_resource type="Environment" id="Environment_pl2bw"]
+background_mode = 2
+sky = SubResource("Sky_r5cuv")
+tonemap_mode = 2
+
+[sub_resource type="Resource" id="Resource_jypon"]
+script = ExtResource("2_7ajdw")
+mode = 0
+textures = [[], []]
+
+[node name="scene_3d_3" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pl2bw")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="HTerrain" type="Node3D" parent="."]
+script = ExtResource("1_51grn")
+centered = true
+_terrain_data = ExtResource("2_v7b2y")
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_jypon")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = null
+shader_params/u_tile_reduction = null

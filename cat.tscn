@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1rq0kr5n4u7c"]
+
+[ext_resource type="PackedScene" uid="uid://vsjxeh521fru" path="res://models/toon_cat_free/scene.gltf" id="1_3w2t5"]
+
+[node name="Cat" type="Node3D"]
+
+[node name="Cat_3d" parent="." instance=ExtResource("1_3w2t5")]
+transform = Transform3D(0.003, 0, 0, 0, 0.003, 0, 0, 0, 0.003, -1.12085, 0, 2.23848)

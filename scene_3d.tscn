@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b5g0w2nxxhako"]
+[gd_scene load_steps=28 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c8dcjsvplatky" path="res://goal.tscn" id="14_8cfaq"]
 [ext_resource type="PackedScene" uid="uid://dq6u73k21jffj" path="res://kick_ball.tscn" id="15_d8ujn"]
 [ext_resource type="PackedScene" uid="uid://bnpq5sy07ck3p" path="res://push_block.tscn" id="16_880x0"]
+[ext_resource type="PackedScene" uid="uid://b1rq0kr5n4u7c" path="res://cat.tscn" id="18_g6np7"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gbisf"]
 panorama = ExtResource("8_qpbrj")
@@ -120,9 +121,15 @@ size = Vector3(4.99019, 0.499298, 0.981202)
 material = SubResource("StandardMaterial3D_1gf3o")
 
 [node name="Block 2" type="CSGBox3D" parent="."]
-transform = Transform3D(0.630989, 0.194384, 0.635942, -0.0599905, 2.04456, -0.0604614, -0.63881, 0, 0.633835, -7.63824, 3.38171, 9.34377)
+transform = Transform3D(0.630989, 0.194384, 0.635942, -0.0599905, 2.04456, -0.0604614, -0.63881, 0, 0.633835, -7.63824, 3.36751, 9.41888)
 use_collision = true
 size = Vector3(9.06308, 4.5274, 6.57141)
+material = SubResource("StandardMaterial3D_quvcd")
+
+[node name="Block 3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.770917, 1.05904, 0.0133432, -0.0162246, 0.002467, 0.899756, 0.463948, -1.75967, 0.00929194, 10.5512, 7.48742, -16.2999)
+use_collision = true
+size = Vector3(9.06308, 4.5274, 18.9377)
 material = SubResource("StandardMaterial3D_quvcd")
 
 [node name="PF3-1" type="CSGBox3D" parent="."]
@@ -144,9 +151,15 @@ size = Vector3(2.32366, 0.499298, 0.981202)
 material = SubResource("StandardMaterial3D_1gf3o")
 
 [node name="PF3-4" type="CSGBox3D" parent="."]
-transform = Transform3D(0.913451, -3.72529e-09, -0.432197, 0, 1, 5.58794e-09, 0.427989, -3.72529e-09, 0.922434, 4.8945, 14.7168, -0.940706)
+transform = Transform3D(0.891675, 0.0555775, -0.472943, -0.0496338, 0.998454, 0.0263257, 0.469063, -3.89076e-09, 0.901837, 4.93794, 14.7168, -0.940706)
 use_collision = true
 size = Vector3(2.32366, 0.499298, 0.981202)
+material = SubResource("StandardMaterial3D_1gf3o")
+
+[node name="PF3-5" type="CSGBox3D" parent="."]
+transform = Transform3D(0.395493, -3.59153e-09, 0.937109, 4.01125e-16, 1, 5.58794e-09, -0.927983, 3.85441e-09, 0.399381, 7.44823, 14.7126, -5.08582)
+use_collision = true
+size = Vector3(8.82994, 0.499298, 0.981202)
 material = SubResource("StandardMaterial3D_1gf3o")
 
 [node name="HTerrain" type="Node3D" parent="."]
@@ -181,7 +194,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.5129, 1.68033, 14.2691)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81329, 1.29611, -22.5108)
 
 [node name="Goal" parent="." instance=ExtResource("14_8cfaq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5665, 0.178226, -18.3186)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6738, 16.1689, -16.57)
 next_level = "scene_3d_2"
 
 [node name="kick_ball" parent="." instance=ExtResource("15_d8ujn")]
@@ -192,3 +205,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8431, 1.67528, 25.865)
 
 [node name="push_block" parent="." instance=ExtResource("16_880x0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.008, 3.0443, 12.8338)
+
+[node name="Cat" parent="." instance=ExtResource("18_g6np7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.37358, 14.9872, -3.52379)
