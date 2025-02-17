@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://44o744e6063t"]
+[gd_scene load_steps=20 format=3 uid="uid://44o744e6063t"]
 
 [ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="1_3ywes"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_51grn"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="11_ssvah"]
 [ext_resource type="PackedScene" uid="uid://b1rq0kr5n4u7c" path="res://cat.tscn" id="12_1q6an"]
 [ext_resource type="PackedScene" uid="uid://cn0ralhlgeur2" path="res://enemy_3d.tscn" id="13_4o3l6"]
+[ext_resource type="PackedScene" uid="uid://cfve1pu2mnd0v" path="res://models/custom models/Smashing Wolt-Borwo.glb" id="14_e01gr"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7dakn"]
 panorama = ExtResource("2_1ao1x")
@@ -217,3 +218,6 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.436
 use_collision = true
 size = Vector3(1, 10.8677, 7.14169)
 material = SubResource("StandardMaterial3D_wy8u0")
+
+[node name="Tinkercad GLTF Scene" parent="." instance=ExtResource("14_e01gr")]
+transform = Transform3D(0.145861, 0, -0.209123, 0, 0.236983, 0, 0.198544, 0, 0.153633, 11.8868, 0.303368, 28.2134)
