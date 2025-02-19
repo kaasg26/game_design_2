@@ -72,6 +72,7 @@ shader_params/u_tile_reduction = null
 
 [node name="Goal" parent="." instance=ExtResource("13_eb5r8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8201, 23.1582, 24.4329)
+next_level = "scene_3d_3"
 
 [node name="player3d" parent="." instance=ExtResource("5_ooc3w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62608, 0)
