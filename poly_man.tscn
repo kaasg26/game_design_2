@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://3ml6witpiipi"]
+[gd_scene load_steps=3 format=3 uid="uid://3ml6witpiipi"]
 
 [ext_resource type="PackedScene" uid="uid://cfve1pu2mnd0v" path="res://models/custom models/Smashing Wolt-Borwo.glb" id="1_6por2"]
+[ext_resource type="PackedScene" uid="uid://dp48yw3tgu2do" path="res://models/Poly_Man_X.glb" id="2_jjill"]
 
 [node name="Poly_Man" instance=ExtResource("1_6por2")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+
+[node name="AuxScene" parent="Node" index="1" instance=ExtResource("2_jjill")]
