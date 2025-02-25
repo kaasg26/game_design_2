@@ -17,6 +17,33 @@ tonemap_mode = 2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wn86x"]
 
+[sub_resource type="Animation" id="Animation_m8bln"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.590381, 1.91932, 9.9155)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.769917, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_srsvc"]
 resource_name = "cutscene1"
 length = 30.0
@@ -89,33 +116,6 @@ tracks/5/loop_wrap = true
 tracks/5/keys = {
 "clips": PackedStringArray(),
 "times": PackedFloat32Array()
-}
-
-[sub_resource type="Animation" id="Animation_m8bln"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.590381, 1.91932, 9.9155)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera3D:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, -0.769917, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0wx1m"]
@@ -203,6 +203,6 @@ transform = Transform3D(0.717968, 0, -0.696076, 0, 1, 0, 0.696076, 0, 0.717968, 
 libraries = {
 "": SubResource("AnimationLibrary_0wx1m")
 }
-autoplay = "cutscene1"
+autoplay = "RESET"
 
 [editable path="CharacterBody3D/AuxScene"]
