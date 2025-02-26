@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfd6myogwphq6"]
+
+[ext_resource type="PackedScene" uid="uid://b8kbcdgv1fd42" path="res://models/the_mill/scene.gltf" id="1_grpgk"]
+[ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_pyiyd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tfy7k"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_cpmug"]
+sky_material = SubResource("ProceduralSkyMaterial_tfy7k")
+
+[sub_resource type="Environment" id="Environment_spddr"]
+background_mode = 2
+sky = SubResource("Sky_cpmug")
+tonemap_mode = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tpp4r"]
+radius = 0.14663
+height = 0.665277
+
+[node name="cutscene_2" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_spddr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_grpgk")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="AuxScene" parent="CharacterBody3D" instance=ExtResource("2_pyiyd")]
+transform = Transform3D(0.00235342, 0, -0.00186049, 0, 0.003, 0, 0.00186049, 0, 0.00235342, -0.352916, 0.432799, 0.850033)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.380843, 0.434162, 0.86538)
+shape = SubResource("CapsuleShape3D_tpp4r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.614667, 2.71255)
+
+[editable path="CharacterBody3D/AuxScene"]
