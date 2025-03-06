@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd4gar5wl5wgw"]
+[gd_scene load_steps=5 format=3 uid="uid://cd4gar5wl5wgw"]
+
+[ext_resource type="PackedScene" uid="uid://cjharo5lnpxj2" path="res://cutscene/forest_scene/scene.gltf" id="1_as8xe"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2gp8t"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -20,3 +22,6 @@ environment = SubResource("Environment_efuvy")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_as8xe")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
