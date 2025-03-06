@@ -1,0 +1,11 @@
+Model Information:
+* title:	Forest scene
+* source:	https://sketchfab.com/3d-models/forest-scene-1232265d731e41cdaef42f94f4a54962
+* author:	ion_omat (https://sketchfab.com/ion_omat)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Forest scene" (https://sketchfab.com/3d-models/forest-scene-1232265d731e41cdaef42f94f4a54962) by ion_omat (https://sketchfab.com/ion_omat) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
