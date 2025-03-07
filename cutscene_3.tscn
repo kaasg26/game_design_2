@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cd4gar5wl5wgw"]
+[gd_scene load_steps=11 format=3 uid="uid://cd4gar5wl5wgw"]
 
 [ext_resource type="PackedScene" uid="uid://cjharo5lnpxj2" path="res://cutscene/forest_scene/scene.gltf" id="1_as8xe"]
+[ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_c1yiq"]
+[ext_resource type="PackedScene" uid="uid://bcef4j7m28gxl" path="res://models/PloyManX2.glb" id="3_my4bo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2gp8t"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -14,6 +16,22 @@ background_mode = 2
 sky = SubResource("Sky_kx7d7")
 tonemap_mode = 2
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6o6no"]
+radius = 1.08344
+height = 5.01324
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mpky4"]
+radius = 1.15889
+height = 5.3178
+
+[sub_resource type="Animation" id="Animation_wsgdy"]
+resource_name = "cutscene_3"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nnaqe"]
+_data = {
+"cutscene_3": SubResource("Animation_wsgdy")
+}
+
 [node name="cutscene_3" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -25,3 +43,32 @@ shadow_enabled = true
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_as8xe")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="AuxScene" parent="CharacterBody3D" instance=ExtResource("2_c1yiq")]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, 78.7989, 3.23448, -15.9836)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.6376, 3.21424, -15.9894)
+shape = SubResource("CapsuleShape3D_6o6no")
+
+[node name="CharacterBody3D2" type="CharacterBody3D" parent="."]
+
+[node name="AuxScene2" parent="CharacterBody3D2" instance=ExtResource("3_my4bo")]
+transform = Transform3D(-2.18557e-09, 0, -0.05, 0, 0.05, 0, 0.05, 0, -2.18557e-09, 80.3705, 0.677441, -19.9871)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.9496, 3.29406, -19.7338)
+shape = SubResource("CapsuleShape3D_mpky4")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.3996, 8.26424, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nnaqe")
+}
+
+[editable path="CharacterBody3D/AuxScene"]
+[editable path="CharacterBody3D2/AuxScene2"]
