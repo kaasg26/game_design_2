@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cd4gar5wl5wgw"]
 
 [ext_resource type="PackedScene" uid="uid://cjharo5lnpxj2" path="res://cutscene/forest_scene/scene.gltf" id="1_as8xe"]
-[ext_resource type="Script" path="res://cutscene_3.gd" id="1_peu17"]
+[ext_resource type="Script" uid="uid://dkwyua7bnxx14" path="res://cutscene_3.gd" id="1_peu17"]
 [ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_c1yiq"]
 [ext_resource type="PackedScene" uid="uid://bcef4j7m28gxl" path="res://models/PloyManX2.glb" id="3_my4bo"]
 
@@ -117,8 +117,8 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nnaqe"]
 _data = {
-"RESET": SubResource("Animation_3h4jp"),
-"cutscene_3": SubResource("Animation_wsgdy")
+&"RESET": SubResource("Animation_3h4jp"),
+&"cutscene_3": SubResource("Animation_wsgdy")
 }
 
 [node name="cutscene_3" type="Node3D"]
@@ -241,11 +241,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.9496, 3.29406, -19.7338)
 shape = SubResource("CapsuleShape3D_mpky4")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.5, 0.224144, -0.836516, -1.49012e-08, 0.965926, 0.258819, 0.866025, -0.129409, 0.482963, 61.0866, 8.04627, -10.4309)
+transform = Transform3D(0.5, 0.224144, -0.836516, 0, 0.965926, 0.258819, 0.866025, -0.129409, 0.482963, 61.0866, 8.04627, -10.4309)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_nnaqe")
+&"": SubResource("AnimationLibrary_nnaqe")
 }
 autoplay = "cutscene_3"
 

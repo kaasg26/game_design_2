@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cn0ralhlgeur2"]
 
-[ext_resource type="Script" path="res://enemy_3d.gd" id="1_wl3n6"]
+[ext_resource type="Script" uid="uid://bpd0drbg4alx2" path="res://enemy_3d.gd" id="1_wl3n6"]
 [ext_resource type="PackedScene" uid="uid://bcef4j7m28gxl" path="res://models/PloyManX2.glb" id="2_113hi"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_e4rkf"]
