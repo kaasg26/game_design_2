@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://d1sa5ur0m7xqq"]
 
-[ext_resource type="Script" path="res://player_3d.gd" id="1_ya3wg"]
+[ext_resource type="Script" uid="uid://vxirla17cis4" path="res://player_3d.gd" id="1_ya3wg"]
 [ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="2_q2jxf"]
 [ext_resource type="PackedScene" uid="uid://ykf3bgx01ccw" path="res://models/gobot.glb" id="3_4utia"]
 

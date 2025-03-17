@@ -1,10 +1,10 @@
 [gd_scene load_steps=28 format=3 uid="uid://b5g0w2nxxhako"]
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
-[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
-[ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
+[ext_resource type="Script" uid="uid://c1r4mbhqohgo4" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
+[ext_resource type="Resource" uid="uid://cvkb61fbur37h" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
 [ext_resource type="PackedScene" uid="uid://bxdsaqmkyrxgb" path="res://models/japan_market.tscn" id="3_ot6hr"]
-[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ryuxh"]
+[ext_resource type="Script" uid="uid://di71g61xqb8in" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ryuxh"]
 [ext_resource type="Texture2D" uid="uid://dpqa0ntx6juut" path="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_Color.jpg" id="7_my5w5"]
 [ext_resource type="Texture2D" uid="uid://bkwqnu7wj27kb" path="res://textures/Metal047B_1K-JPG/Metal047B_1K-JPG_Color.jpg" id="8_bkwsw"]
 [ext_resource type="Texture2D" uid="uid://q8x5aqflpya3" path="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_Color.jpg" id="8_dqb2l"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://i5ege6c1m107"]
 
 [ext_resource type="PackedScene" uid="uid://lqg4kmjsvrce" path="res://cutscene/city_scene_tokyo.glb" id="1_7p8v1"]
-[ext_resource type="Script" path="res://cutscene_1.gd" id="1_1374k"]
+[ext_resource type="Script" uid="uid://c2uvspednfmeb" path="res://cutscene_1.gd" id="1_1374k"]
 [ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_75yty"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yoqx4"]
@@ -157,8 +157,8 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0wx1m"]
 _data = {
-"RESET": SubResource("Animation_m8bln"),
-"cutscene1": SubResource("Animation_srsvc")
+&"RESET": SubResource("Animation_m8bln"),
+&"cutscene1": SubResource("Animation_srsvc")
 }
 
 [node name="cutscene1" type="Node3D"]

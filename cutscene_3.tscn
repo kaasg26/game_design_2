@@ -29,7 +29,7 @@ resource_name = "cutscene_3"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nnaqe"]
 _data = {
-"cutscene_3": SubResource("Animation_wsgdy")
+&"cutscene_3": SubResource("Animation_wsgdy")
 }
 
 [node name="cutscene_3" type="Node3D"]
