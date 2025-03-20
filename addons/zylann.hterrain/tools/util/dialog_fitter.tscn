@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dulgq8pbb34f2"]
+[gd_scene load_steps=2 format=3 uid="uid://dg2h4o3exslx6"]
 
-[ext_resource type="Script" uid="uid://cc0k5c20rx1a3" path="res://addons/zylann.hterrain/tools/util/dialog_fitter.gd" id="1"]
+[ext_resource type="Script" uid="uid://cdyg0dsltycws" path="res://addons/zylann.hterrain/tools/util/dialog_fitter.gd" id="1"]
 
 [node name="DialogFitter" type="Control"]
 mouse_filter = 2

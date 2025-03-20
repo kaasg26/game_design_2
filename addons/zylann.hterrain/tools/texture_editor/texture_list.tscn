@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://hbabevdh0ogf"]
+[gd_scene load_steps=3 format=3 uid="uid://ck4xn6w1dlxhw"]
 
-[ext_resource type="Script" uid="uid://dw2k27kykc8ui" path="res://addons/zylann.hterrain/tools/texture_editor/texture_list.gd" id="1"]
-[ext_resource type="Script" uid="uid://bs43l0sb8utsx" path="res://addons/zylann.hterrain/tools/texture_editor/flow_container.gd" id="2"]
+[ext_resource type="Script" uid="uid://dojf5aqw387p0" path="res://addons/zylann.hterrain/tools/texture_editor/texture_list.gd" id="1"]
+[ext_resource type="Script" uid="uid://c5r8rltdwporx" path="res://addons/zylann.hterrain/tools/texture_editor/flow_container.gd" id="2"]
 
 [node name="TextureList" type="ScrollContainer"]
 anchor_right = 1.0

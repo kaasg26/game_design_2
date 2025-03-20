@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dfd6myogwphq6"]
 
-[ext_resource type="Script" uid="uid://db461ul40nd76" path="res://cutscene_2.gd" id="1_053p6"]
+[ext_resource type="Script" uid="uid://bkjjqjienn2xp" path="res://cutscene_2.gd" id="1_053p6"]
 [ext_resource type="PackedScene" uid="uid://b8kbcdgv1fd42" path="res://models/the_mill/scene.gltf" id="1_grpgk"]
 [ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_pyiyd"]
 
@@ -166,7 +166,7 @@ transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 3.06292
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_g7ue6")
+&"": SubResource("AnimationLibrary_g7ue6")
 }
 autoplay = "cutscene_2"
 

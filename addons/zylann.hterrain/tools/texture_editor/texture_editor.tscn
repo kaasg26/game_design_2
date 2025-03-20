@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://n6utxuuo7g0m"]
+[gd_scene load_steps=3 format=3 uid="uid://drsccuj5glyp4"]
 
-[ext_resource type="Script" uid="uid://ugm5vmy2i2hs" path="res://addons/zylann.hterrain/tools/texture_editor/texture_editor.gd" id="1"]
+[ext_resource type="Script" uid="uid://cljb8473rf2ir" path="res://addons/zylann.hterrain/tools/texture_editor/texture_editor.gd" id="1"]
 [ext_resource type="PackedScene" path="res://addons/zylann.hterrain/tools/texture_editor/texture_list.tscn" id="2"]
 
 [node name="TextureEditor" type="Control"]

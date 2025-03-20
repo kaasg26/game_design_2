@@ -1,10 +1,10 @@
 [gd_scene load_steps=20 format=3 uid="uid://44o744e6063t"]
 
 [ext_resource type="PackedScene" uid="uid://dky4cd8br4n3j" path="res://playerhud_3d.tscn" id="1_3ywes"]
-[ext_resource type="Script" uid="uid://c1r4mbhqohgo4" path="res://addons/zylann.hterrain/hterrain.gd" id="1_51grn"]
+[ext_resource type="Script" uid="uid://bweylmriv21tx" path="res://addons/zylann.hterrain/hterrain.gd" id="1_51grn"]
 [ext_resource type="Texture2D" uid="uid://0xscbqcljk8s" path="res://textures/Travertine002_1K-JPG/Travertine002_1K-JPG_Color.jpg" id="2_1ao1x"]
-[ext_resource type="Script" uid="uid://di71g61xqb8in" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="2_7ajdw"]
-[ext_resource type="Resource" uid="uid://cyeokh6peefq7" path="res://terrains/scene_3d_3/data.hterrain" id="2_v7b2y"]
+[ext_resource type="Script" uid="uid://bhpnft1ifbiuj" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="2_7ajdw"]
+[ext_resource type="Resource" uid="uid://grx33rs711v6" path="res://terrains/scene_3d_3/data.hterrain" id="2_v7b2y"]
 [ext_resource type="Texture2D" uid="uid://csylghfkb5j04" path="res://textures/Metal021_1K-JPG/Metal021_1K-JPG_Color.jpg" id="6_13hkv"]
 [ext_resource type="Texture2D" uid="uid://ypyc0rcti1ho" path="res://textures/Leather037_1K-JPG/Leather037_1K-JPG_Color.jpg" id="7_baqva"]
 [ext_resource type="Texture2D" uid="uid://dwf07qpym6ogr" path="res://textures/Metal021_1K-JPG/Metal021_1K-JPG_NormalGL.jpg" id="8_i7x2k"]

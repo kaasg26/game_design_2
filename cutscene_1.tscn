@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://i5ege6c1m107"]
 
 [ext_resource type="PackedScene" uid="uid://lqg4kmjsvrce" path="res://cutscene/city_scene_tokyo.glb" id="1_7p8v1"]
-[ext_resource type="Script" uid="uid://c2uvspednfmeb" path="res://cutscene_1.gd" id="1_1374k"]
+[ext_resource type="Script" uid="uid://dbwayc30ql3hh" path="res://cutscene_1.gd" id="1_1374k"]
 [ext_resource type="PackedScene" uid="uid://c0rj1wugqanyl" path="res://cutscene/char_with_anim.glb" id="2_75yty"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yoqx4"]
@@ -242,7 +242,7 @@ transform = Transform3D(0.717968, 0, -0.696076, 0, 1, 0, 0.696076, 0, 0.717968, 
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_0wx1m")
+&"": SubResource("AnimationLibrary_0wx1m")
 }
 autoplay = "cutscene1"
 
