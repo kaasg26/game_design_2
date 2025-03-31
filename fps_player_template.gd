@@ -22,7 +22,7 @@ const BOB_AMP = 0.08
 var t_bob = 0.0
 
 
-var damage_shader = preload("res://assets/shaders/take_damage.tres")
+var damage_shader = preload("res://shaders/take_damage.tres")
 @onready var head = $Head
 
 var blaster

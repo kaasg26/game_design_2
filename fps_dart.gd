@@ -26,7 +26,7 @@ func do_damage(group):
 	for entity in get_tree().get_nodes_in_group(group):
 		if entity != get_parent():
 			if $Area3D.overlaps_area(entity.head):
-				entity.take_damage(ATTACK*2.5 + crit, true, true, spawn_origin)\
+				entity.take_damage(ATTACK*2.5 + crit, true, true, spawn_origin)
 			if $Area3D.overlaps_body(entity):
 				entity.take_damage(ATTACK + crit, true, false, spawn_origin)
 
