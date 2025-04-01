@@ -13,6 +13,7 @@ height = 0.095
 radius = 0.02
 
 [node name="FPS_dart" type="RigidBody3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 script = ExtResource("1_gylib")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
