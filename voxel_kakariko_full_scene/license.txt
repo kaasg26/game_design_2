@@ -1,0 +1,11 @@
+Model Information:
+* title:	[Voxel] Kakariko full Scene
+* source:	https://sketchfab.com/3d-models/voxel-kakariko-full-scene-6ef46d45927945259127a73484f10d24
+* author:	Dyson (https://sketchfab.com/dysonson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[Voxel] Kakariko full Scene" (https://sketchfab.com/3d-models/voxel-kakariko-full-scene-6ef46d45927945259127a73484f10d24) by Dyson (https://sketchfab.com/dysonson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
