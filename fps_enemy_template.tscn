@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1i4665nmhwax"]
 
-[ext_resource type="Script" path="res://fps_enemy_template.gd" id="1_jev1x"]
+[ext_resource type="Script" uid="uid://d1ermms64q2lj" path="res://fps_enemy_template.gd" id="1_jev1x"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_g43l7"]
 
@@ -70,6 +70,10 @@ transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0, 0.635
 near = 0.001
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
+
+[node name="lblHealth" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55143, 0)
+text = "Health 100/100"
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 

@@ -139,7 +139,7 @@ func _physics_process(delta):
 			TOTAL_AMMO -= new_ammo
 			is_reloading = false
 	
-	# TODO: HUD stuff
+	$HUD/Label/lblHealthP.text = "%d/%d" % [int(HEALTH), MAX_HEALTH]
 	
 	if Input.is_action_pressed("aim_sight"):
 		target_pos   = aim_pos

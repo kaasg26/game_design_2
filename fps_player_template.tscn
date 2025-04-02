@@ -77,7 +77,7 @@ offset_bottom = 80.0
 text = "Health:"
 label_settings = SubResource("LabelSettings_uw4s0")
 
-[node name="lblHealth" type="Label" parent="HUD/Label"]
+[node name="lblHealthP" type="Label" parent="HUD/Label"]
 layout_mode = 0
 offset_left = 161.0
 offset_right = 328.0
