@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgb0hmeu45atf"]
+
+[ext_resource type="PackedScene" uid="uid://b4cpcknh1xr1k" path="res://peach's_castle.tscn" id="1_djp0f"]
+[ext_resource type="PackedScene" uid="uid://d2hv3elprw2ee" path="res://fps_player_template.tscn" id="2_46qek"]
+[ext_resource type="PackedScene" uid="uid://c1i4665nmhwax" path="res://fps_enemy_template.tscn" id="3_t1ojm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_quvu4"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_q55in"]
+sky_material = SubResource("ProceduralSkyMaterial_quvu4")
+
+[sub_resource type="Environment" id="Environment_dxmxk"]
+background_mode = 2
+sky = SubResource("Sky_q55in")
+tonemap_mode = 2
+
+[node name="fps_world_3" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dxmxk")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Peach\'s Castle" parent="." instance=ExtResource("1_djp0f")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="fps_player" parent="." instance=ExtResource("2_46qek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.15474, 15.2915, 11.2735)
+
+[node name="fps_enemy" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.8362, 2.197, 16.5063)
