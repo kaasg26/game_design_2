@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdhybw4qlkcuk"]
+[gd_scene load_steps=8 format=3 uid="uid://cdhybw4qlkcuk"]
 
-[ext_resource type="PackedScene" uid="uid://b1y3lqc3ixq7y" path="res://carrier_scene.glb" id="1_jrvui"]
+[ext_resource type="PackedScene" uid="uid://d4dltf1ympo80" path="res://aircraft_carrier.tscn" id="1_gtcvr"]
 [ext_resource type="PackedScene" uid="uid://d2hv3elprw2ee" path="res://fps_player_template.tscn" id="2_1xlax"]
+[ext_resource type="PackedScene" uid="uid://c1i4665nmhwax" path="res://fps_enemy_template.tscn" id="3_gtcvr"]
+[ext_resource type="PackedScene" uid="uid://dp48yw3tgu2do" path="res://Poly_Man_X.glb" id="4_vkb1x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2xjml"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -24,8 +26,29 @@ environment = SubResource("Environment_jrvui")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_jrvui")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -5.62097, 159.188, 1.31494)
+[node name="Aircraft carrier" parent="." instance=ExtResource("1_gtcvr")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.25449, 157.624, 0)
 
 [node name="fps_player" parent="." instance=ExtResource("2_1xlax")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.47213, 160.393, -81.4641)
+
+[node name="fps_enemy" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95572, 161.808, 12.5382)
+
+[node name="fps_enemy2" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3861, 165.346, 20.4493)
+
+[node name="fps_enemy3" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.676813, 163.724, 72.9684)
+
+[node name="fps_enemy4" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(0.9967, 0.0811731, 0, -0.0811731, 0.9967, 0, 0, 0, 1, 21.0118, 161.957, 93.5893)
+
+[node name="fps_enemy5" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.29829, 161.157, 121.914)
+
+[node name="fps_enemy6" parent="." instance=ExtResource("3_gtcvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.0612, 161.274, -44.4279)
+
+[node name="AuxScene" parent="." instance=ExtResource("4_vkb1x")]
+transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 1.42171, 153.366, 100.253)

@@ -29,7 +29,28 @@ shadow_enabled = true
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 
 [node name="fps_player" parent="." instance=ExtResource("2_46qek")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.15474, 15.2915, 11.2735)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.21474, 11.8813, -22.0483)
 
 [node name="fps_enemy" parent="." instance=ExtResource("3_t1ojm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.8362, 2.197, 16.5063)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.8678, 5.16461, 3.14375)
+
+[node name="fps_enemy2" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.8179, 1.52066, 28.7571)
+
+[node name="fps_enemy3" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.6503, 4.21554, 2.28463)
+
+[node name="fps_enemy4" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.7766, 5.4602, 15.3541)
+
+[node name="fps_enemy5" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.7288, 4.50969, 59.9271)
+
+[node name="fps_enemy6" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.7927, 4.54708, -19.8601)
+
+[node name="fps_enemy7" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5908, -7.44328, -20.4168)
+
+[node name="fps_enemy8" parent="." instance=ExtResource("3_t1ojm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.6989, 7.06201, -17.9794)

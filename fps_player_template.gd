@@ -188,7 +188,7 @@ func _physics_process(delta):
 		await get_tree().create_timer(0.25).timeout
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		OS.alert("You win!")
-		# TODO: change scene
+		#TODO change scene
 		get_tree().quit()
 	
 	# Right Joystick

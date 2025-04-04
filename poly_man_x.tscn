@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cab7gm6uhfdck"]
 
-[ext_resource type="PackedScene" uid="uid://dp48yw3tgu2do" path="res://models/Poly_Man_X.glb" id="1_2spqk"]
+[ext_resource type="PackedScene" uid="uid://dp48yw3tgu2do" path="res://Poly_Man_X.glb" id="1_2spqk"]
 
 [node name="Poly_Man_X" instance=ExtResource("1_2spqk")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
