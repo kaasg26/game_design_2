@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvd05d2gr2foi"
+path="res://.godot/imported/Track_Cliff_Curve_Standard_Single_4x4.obj-3660635f369c0552f3de3d7497026b6f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Track_Cliff_Curve_Standard_Single_4x4.obj-3660635f369c0552f3de3d7497026b6f.mesh"]
+
+source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Cliff_Curve_Standard_Single_4x4.obj"
+dest_files=["res://.godot/imported/Track_Cliff_Curve_Standard_Single_4x4.obj-3660635f369c0552f3de3d7497026b6f.mesh", "res://.godot/imported/Track_Cliff_Curve_Standard_Single_4x4.obj-3660635f369c0552f3de3d7497026b6f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
