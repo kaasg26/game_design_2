@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwb75uxc01oqa"]
+[gd_scene load_steps=6 format=3 uid="uid://cwb75uxc01oqa"]
 
 [ext_resource type="MeshLibrary" uid="uid://dcmvb87qbtt40" path="res://mesh/rc_tiles_1.tres" id="1_orelr"]
+[ext_resource type="PackedScene" uid="uid://er42d3tsu8vh" path="res://rc_player.tscn" id="2_w7q12"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w7q12"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -24,9 +25,10 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 mesh_library = ExtResource("1_orelr")
-cell_size = Vector3(1, 1, 1)
 cell_center_y = false
+cell_scale = 2.0
 data = {
 "cells": PackedInt32Array(0, 2, 177, 1, 2, 182, 2, 2, 182, 3, 2, 182, 4, 2, 182, 65535, 2, 182, 65534, 2, 182, 65533, 2, 182, 65532, 2, 182, 65531, 2, 182, 5, 2, 182, 6, 2, 182, 7, 2, 182, 8, 3, 655542, 9, 3, 655542, 10, 3, 655542, 65530, 3, 655542, 65528, 3, 655542, 65529, 3, 655542, 11, 3, 655542, 12, 3, 655542, 13, 3, 655542, 14, 3, 655542, 15, 3, 655546, 17, 6, 1048762, 14, 8, 182, 13, 8, 182, 12, 8, 182, 65527, 2, 182, 65526, 2, 182, 65525, 2, 182, 65522, 5, 1441978, 9, 11, 1441964, 9, 12, 1048757, 9, 17, 1441973, 9, 18, 1048744, 7, 19, 173, 4, 15, 1441972, 3, 10, 1048756, 2, 8, 655526, 1, 7, 182, 0, 7, 182, 65535, 7, 182, 65534, 7, 182, 65533, 7, 182, 65530, 10, 1441978, 65529, 11, 1048762, 65524, 13, 186, 65526, 13, 182, 65525, 13, 182, 65522, 10, 1441974, 65522, 9, 1441974, 65522, 8, 1441974, 65522, 7, 1441974, 65522, 6, 1441974, 0, 3, 655406, 65523, 1, 59, 65521, 14, 1048636, 2, 17, 1048636, 16, 10, 655420, 7, 6, 655399)
 }
@@ -39,3 +41,6 @@ cell_center_y = false
 data = {
 "cells": PackedInt32Array(65534, 6, 983058, 8, 3, 589839, 12, 2, 589839)
 }
+
+[node name="rc_player" parent="." instance=ExtResource("2_w7q12")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.95775, 0.0988705, 11.3355)
