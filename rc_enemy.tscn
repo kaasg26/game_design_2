@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=4 uid="uid://dv6mdi3o7l1td"]
 
-[ext_resource type="Script" uid="uid://bfw5so3clgmal" path="res://rc_player.gd" id="1_sh3ng"]
+[ext_resource type="Script" uid="uid://bl3q64ckxfh2q" path="res://rc_enemy.gd" id="1_sh3ng"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ghvx"]
 resource_name = "paintRed"
@@ -277,6 +277,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 0)
 [node name="Camera3D" type="Camera3D" parent="centerMass"]
 transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0, 1.6, 4)
 current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, -5, 0)
+
+[node name="RayCast3D2" type="RayCast3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 2.18557e-08, 0, -4.37114e-08, -1, 0.5, 0.866025, -3.78552e-08, 0, 0, 0)
+
+[node name="RayCast3D3" type="RayCast3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 2.18557e-08, 0, -4.37114e-08, -1, 0.5, 0.866025, -3.78552e-08, 0, 0, 0)
+
+[node name="RayCast3D4" type="RayCast3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 2.18557e-08, 0, -4.37114e-08, -1, 0.5, 0.866025, -3.78552e-08, 0, 0, 0)
+
+[node name="RayCast3D5" type="RayCast3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 2.18557e-08, 0, -4.37114e-08, -1, 0.5, 0.866025, -3.78552e-08, 0, 0, 0)
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 2
