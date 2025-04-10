@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=4 uid="uid://er42d3tsu8vh"]
+[gd_scene load_steps=14 format=4 uid="uid://dv6mdi3o7l1td"]
 
-[ext_resource type="Script" uid="uid://bfw5so3clgmal" path="res://rc_player.gd" id="1_nqw02"]
+[ext_resource type="Script" uid="uid://bfw5so3clgmal" path="res://rc_player.gd" id="1_sh3ng"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ghvx"]
 resource_name = "paintRed"
@@ -218,7 +218,7 @@ metadata/extras = {
 font_size = 32
 
 [node name="rc_player" type="VehicleBody3D"]
-script = ExtResource("1_nqw02")
+script = ExtResource("1_sh3ng")
 
 [node name="body" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34997e-13, 0.1, 0)
