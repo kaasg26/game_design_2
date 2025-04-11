@@ -1,6 +1,45 @@
-[gd_scene load_steps=14 format=4 uid="uid://er42d3tsu8vh"]
+[gd_scene load_steps=14 format=4 uid="uid://bow646w4sgyvn"]
 
-[ext_resource type="Script" uid="uid://bfw5so3clgmal" path="res://rc_player.gd" id="1_nqw02"]
+[sub_resource type="GDScript" id="GDScript_e5bjn"]
+script/source = "extends VehicleBody3D
+
+const MAX_STEER = 0.4
+const MAX_RPM = 500
+const MAX_TORQUE = 200
+const HORSE_POWER = 300
+
+func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+func calc_engine_force(accel, rpm):
+	return accel * MAX_TORQUE * (1 - rpm / MAX_RPM)
+
+func _physics_process(delta: float) -> void:
+	steering = lerp(steering, 
+					Input.get_axis(\"ui_right\", \"ui_left\") * MAX_STEER, 
+					delta * 5.0)
+	var accel = Input.get_axis(\"ui_down\", \"ui_up\") * HORSE_POWER
+	$backLeft.engine_force = calc_engine_force(accel, abs($backLeft.get_rpm()))
+	$backRight.engine_force = calc_engine_force(accel, abs($backRight.get_rpm()))
+	
+	var fwd_mps = abs((linear_velocity * transform.basis).z)
+	$Label.text = \"%d mph\" % (fwd_mps * 2.23694)
+	
+	$centerMass.global_position = $centerMass.global_position.lerp(
+											global_position, delta * 20.0)
+	$centerMass.transform = $centerMass.transform.interpolate_with(
+										transform, delta * 5.0)
+	$centerMass/Camera3D.look_at(global_position.lerp(
+								global_position + linear_velocity, delta * 5.0))
+	check_and_right()
+
+func check_and_right():
+	if global_transform.basis.y.dot(Vector3.UP) < 0:
+		var cur_rotation = self.rotation_degrees
+		cur_rotation.x = 0 #reset pitch
+		cur_rotation.z = 0 #reset roll
+		self.rotation_degrees = cur_rotation
+"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ghvx"]
 resource_name = "paintRed"
@@ -218,7 +257,7 @@ metadata/extras = {
 font_size = 32
 
 [node name="rc_player" type="VehicleBody3D"]
-script = ExtResource("1_nqw02")
+script = SubResource("GDScript_e5bjn")
 
 [node name="body" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34997e-13, 0.1, 0)
@@ -276,6 +315,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 0)
 
 [node name="Camera3D" type="Camera3D" parent="centerMass"]
 transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0, 1.6, 4)
+rotation_order = 0
 current = true
 
 [node name="Label" type="Label" parent="."]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cwb75uxc01oqa"]
+[gd_scene load_steps=7 format=3 uid="uid://cwb75uxc01oqa"]
 
 [ext_resource type="MeshLibrary" uid="uid://dcmvb87qbtt40" path="res://mesh/rc_tiles_1.tres" id="1_orelr"]
-[ext_resource type="PackedScene" uid="uid://er42d3tsu8vh" path="res://rc_player.tscn" id="2_w7q12"]
+[ext_resource type="PackedScene" uid="uid://bow646w4sgyvn" path="res://rc_player.tscn" id="2_w7q12"]
+[ext_resource type="PackedScene" uid="uid://dtnlhwb0cpqfm" path="res://rc_enemy.tscn" id="3_rjgen"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w7q12"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -43,4 +44,10 @@ data = {
 }
 
 [node name="rc_player" parent="." instance=ExtResource("2_w7q12")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.95775, 0.0988705, 11.3355)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.4241, 0.0988705, 11.3355)
+
+[node name="rc_enemy" parent="." instance=ExtResource("3_rjgen")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.66914, 0, 12.8938)
+
+[node name="rc_enemy2" parent="." instance=ExtResource("3_rjgen")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.5881, 0.464994, 10.6467)
