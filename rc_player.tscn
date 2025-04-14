@@ -1,66 +1,27 @@
-[gd_scene load_steps=14 format=4 uid="uid://bow646w4sgyvn"]
+[gd_scene load_steps=14 format=4 uid="uid://b00luksw4f1a1"]
 
-[sub_resource type="GDScript" id="GDScript_e5bjn"]
-script/source = "extends VehicleBody3D
+[ext_resource type="Script" uid="uid://daqrta6m4j5ns" path="res://rc_player.gd" id="1_nqw02"]
 
-const MAX_STEER = 0.4
-const MAX_RPM = 500
-const MAX_TORQUE = 200
-const HORSE_POWER = 300
-
-func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-
-func calc_engine_force(accel, rpm):
-	return accel * MAX_TORQUE * (1 - rpm / MAX_RPM)
-
-func _physics_process(delta: float) -> void:
-	steering = lerp(steering, 
-					Input.get_axis(\"ui_right\", \"ui_left\") * MAX_STEER, 
-					delta * 5.0)
-	var accel = Input.get_axis(\"ui_down\", \"ui_up\") * HORSE_POWER
-	$backLeft.engine_force = calc_engine_force(accel, abs($backLeft.get_rpm()))
-	$backRight.engine_force = calc_engine_force(accel, abs($backRight.get_rpm()))
-	
-	var fwd_mps = abs((linear_velocity * transform.basis).z)
-	$Label.text = \"%d mph\" % (fwd_mps * 2.23694)
-	
-	$centerMass.global_position = $centerMass.global_position.lerp(
-											global_position, delta * 20.0)
-	$centerMass.transform = $centerMass.transform.interpolate_with(
-										transform, delta * 5.0)
-	$centerMass/Camera3D.look_at(global_position.lerp(
-								global_position + linear_velocity, delta * 5.0))
-	check_and_right()
-
-func check_and_right():
-	if global_transform.basis.y.dot(Vector3.UP) < 0:
-		var cur_rotation = self.rotation_degrees
-		cur_rotation.x = 0 #reset pitch
-		cur_rotation.z = 0 #reset roll
-		self.rotation_degrees = cur_rotation
-"
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ghvx"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdo1h"]
 resource_name = "paintRed"
 albedo_color = Color(1, 0.227451, 0.360134, 1)
 metallic = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3twq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n52xp"]
 resource_name = "plastic"
 albedo_color = Color(0.376471, 0.376471, 0.376471, 1)
 metallic = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xdry2"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6w1g"]
 resource_name = "window"
 albedo_color = Color(0.937255, 0.937255, 0.937255, 1)
 metallic = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2mt1"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2ohc"]
 resource_name = "_defaultMat"
 metallic = 1.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ld1xp"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_gwelu"]
 _surfaces = [{
 "aabb": AABB(-0.55, 0, -1.07989, 1.1, 0.632544, 2.35977),
 "format": 34359742465,
@@ -104,7 +65,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lmnyq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rkybe"]
 resource_name = "race_Mesh body"
 _surfaces = [{
 "aabb": AABB(-0.55, 0, -1.07989, 1.1, 0.632544, 2.35977),
@@ -112,7 +73,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 594,
 "index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgABgAIAAkABgAJAAoABgAKAAsABgALAAwABgAMAA0ABgANAA4ADwAGAA4ADgAQAA8AEQAPABAAEQAQABIAEQASABMAEQATABQAEQAUABUAFgARABUAFwAWABUAFwAVABgAFwAYABkAFwAZABoAFwAaABsAHAAXABsAHQAcABsAGwAeAB0AHwAcAB0AHQAgAB8AIQAiACMAJAAhACMAJQAkACMAIwAmACUAJwAoACkAKQAqACcAKwAsAC0ALQAuACsALwAwADEAMgAvADEAMwAvADIAMgAxADQANQAyADQANQA0ADYANQA2ADcANwA4ADUAOQA1ADgAOgA7ADwAPAA9ADoAPgA/AEAAQABBAD4AQgBDAEQARQBCAEQARQBGAEIARwBFAEQARABIAEcASQBHAEgASgBJAEgASgBIAEsASwBMAEoATQBOAE8ATwBQAE0AUQBSAFMAUwBUAFEAVQBWAFcAWABZAFUAWgBYAFUAWwBaAFUAVwBbAFUAXABbAFcAXQBcAFcAXgBdAFcAXgBXAF8AYABeAF8AYABfAGEAYgBgAGEAYwBiAGEAZABjAGEAYQBlAGQAZgBnAGgAaABpAGYAaQBqAGYAaQBrAGoAawBsAGoAbABtAGoAbgBvAHAAcABxAG4AcgBzAHQAdAB1AHIAdgB3AHgAeAB5AHYAegB7AHwAfAB9AHoAfgB/AIAAgACBAH4AggCDAIQAhACFAIIAhgCHAIgAiACJAIYAiQCKAIYAigCLAIYAjACNAI4AjACOAI8AjACPAJAAkQCMAJAAkACSAJEAkwCRAJIAkgCUAJMAkgCVAJQAlQCWAJQAlgCXAJQAmACZAJoAmgCbAJgAnACdAJ4AnACfAKAAnACgAKEAnAChAKIAnACjAJ8AnACeAKMAnACiAKQApQCjAJ4ApgCcAKQApwClAJ4ApACoAKYAqACpAKYAqgCnAJ4AqQCrAKYArACqAJ4ArQCsAJ4ArgCtAJ4ArwCuAJ4ArwCeALAAsQCvALAAsgCxALAAsACzALIAswC0ALIAswCmALQApgC1ALQApgC2ALUAtwC2AKYAuAC3AKYAuQC4AKYAqwC5AKYAugC7ALwAvAC9AL4AvAC/AL0AvAC+AMAAvADAALoAvADBAL8AwADCALoAwgDDALoAugDDAMQAwQDFAL8AxADGALoAxgDHALoAwQDIAMUAwQDJAMgAxwDKALoAygDLALoAywDMALoAzADNALoAwQDOAMkAzQDPALoAwQDQAM4AwQDRANAAzQDSAM8AwQDTANEAwQDPANMAwQDUAM8A1QDTAM8A0gDWAM8A1wDVAM8A1gDXAM8A2ADZANoA2gDbANgA3ADdAN4A3gDfANwA3wDgANwA3wDhAOAA4gDjAOQA5ADlAOIA5QDmAOIA5gDnAOIA6ADpAOoA6gDrAOgA6wDsAOgA6wDtAOwA7gDvAPAA8ADxAO4A8QDyAO4A8wD0APUA9QD2APMA9gD3APMA+AD5APoA+gD7APgA/AD9AP4A/gD/APwAAAEBAQIBAgEDAQABBAEFAQYBBgEHAQQB"),
-"material": SubResource("StandardMaterial3D_2ghvx"),
+"material": SubResource("StandardMaterial3D_fdo1h"),
 "name": "paintRed",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -124,7 +85,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 1182,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAFwAYABQAGQAaABsAGwAcABkAHAAdABkAHgAfACAAIAAhAB4AIgAjACQAJAAlACIAJgAnACgAKAApACYAKQAqACYAKwAsAC0ALQAuACsALwAwADEAMQAyAC8AMwA0ADUANQA2ADMANwA4ADkAOQA6ADcAOgA7ADcAPAA9AD4APgA/ADwAPwBAADwAQABBADwAQgBDAEQARABFAEIARQBGAEIARQBHAEYASABJAEoASgBLAEgATABNAE4ATwBQAEwAUQBPAEwATgBRAEwAUgBRAE4AUwBSAE4AVABTAE4ATgBVAFQAVgBUAFUAVgBVAFcAWABWAFcAVwBZAFgAUwBaAFIAWwBSAFoAXABbAFoAXABdAFsAXgBcAFoAXABfAF0AYABdAF8AXwBhAGAAYgBeAFoAYgBaAGMAZABiAGMAYwBlAGQAZgBnAGgAaABpAGYAagBrAGwAbABtAGoAbgBvAHAAcABxAG4AcgBzAHQAdAB1AHIAdgB3AHgAeAB5AHYAegB7AHwAfAB9AHoAfgB/AIAAgACBAH4AggCDAIQAhACFAIIAhQCGAIIAhQCHAIYAiACJAIoAigCLAIgAjACNAI4AjgCPAIwAkACRAJIAkgCTAJAAlACVAJYAlgCXAJQAmACZAJoAmgCbAJgAnACdAJ4AngCfAJwAoAChAKIAogCjAKAApAClAKYApgCnAKQAqACpAKoAqgCrAKgArACtAK4ArgCvAKwAsACxALIAsgCzALAAtAC1ALYAtgC3ALQAuAC5ALoAugC7ALgAvAC9AL4AvgC/ALwAwADBAMIAwgDDAMAAxADFAMYAxgDHAMQAyADJAMoAygDLAMgAzADNAM4AzgDPAMwA0ADRANIA0gDTANAA1ADVANYA1gDXANQA2ADZANoA2gDbANgA3ADdAN4A3gDfANwA4ADhAOIA4gDjAOAA5ADlAOYA5gDnAOQA6ADpAOoA6gDrAOgA7ADtAO4A7gDvAOwA8ADxAPIA8gDzAPAA9AD1APYA9gD3APQA+AD5APoA+gD7APgA/AD9AP4A/gD/APwAAAEBAQIBAgEDAQABBAEFAQYBBgEHAQQBCAEJAQoBCgELAQgBDAENAQ4BDgEPAQwBEAERARIBEgETARABFAEVARYBFgEXARQBGAEZARoBGgEbARgBHAEdAR4BHgEfARwBIAEhASIBIgEjASABJAElASYBJgEnASQBKAEpASoBKgErASgBLAEtAS4BLgEvASwBMAExATIBMgEzATABNAE1ATYBNgE3ATQBOAE5AToBOgE7ATgBPAE9AT4BPgE/ATwBQAFBAUIBQgFDAUABRAFFAUYBRgFHAUQBSAFJAUoBSgFLAUgBTAFNAU4BTgFPAUwBUAFRAVIBUgFTAVABVAFVAVYBVgFXAVQBWAFZAVoBWgFbAVgBXAFdAV4BXgFfAVwBYAFhAWIBYgFjAWABZAFlAWYBZgFnAWQBaAFpAWoBagFrAWgBbAFtAW4BbgFvAWwBcAFxAXIBcgFzAXABcgF0AXMBdAF1AXMBdAF2AXUBdgF3AXUBdgF4AXcBeAF5AXcBeQF6AXcBewF5AXgBegF8AXcBegF9AXwBfQF+AXwBfgF/AXwBfwGAAXwBfwGBAYABgQGCAYABggGDAYABggGEAYMBhAGFAYMBhQGGAYMBhgGHAYMBhgGIAYcBiAGJAYcBiQGKAYcBiwGHAYoBiwGKAYwBiwGMAY0BiwGOAYcBiwGNAY8BiwGQAY4BkAGRAY4BkgGLAY8BkAGTAZEBkgGPAZQBkwGVAZEBkwGWAZUBlgGXAZUBkgGUAZgBmQGSAZgBmQGYAZoBmQGaAZsBmQGbAZwBnQGZAZwBnQGcAZ4BnQGeAZ8BnQGfAXsBeAGdAXsBoAGhAaIBogGjAaABpAGlAaYBpgGnAaQBqAGpAaoBqgGrAagBrAGtAa4BrgGvAawBsAGxAbIBsgGzAbABtAG1AbYBtgG3AbQBuAG5AboBugG7AbgBvAG9Ab4BvgG/AbwBwAHBAcIBwgHDAcABxAHFAcYBxgHHAcQByAHJAcoBygHLAcgBzAHNAc4BzgHPAcwB0AHRAdIB0gHTAdAB1AHVAdYB1gHXAdQB2AHZAdoB2gHbAdgB3AHdAd4B3gHfAdwB3gHgAd8B4AHhAd8B4AHiAeEB4gHjAeEB4gHkAeMB5AHlAeMB5QHmAeMB5wHlAeQB5gHoAeMB5gHpAegB6QHqAegB6gHrAegB5AHsAecB7AHtAecB7AHuAe0B7AHvAe4B6wHwAegB6wHxAfAB8QHyAfAB8gHzAfAB8wH0AfAB8wH1AfQB9QH2AfQB7AH3Ae8B9wH4Ae8B9wH5AfgB9wH6AfkB9wH7AfoB+wH8AfoB+wH9AfwB+wH+Af0B/gH/Af0B/gEAAv8B/gEBAgAC/gECAgECAwIBAgICBAIDAgIC9gEEAgIC9gECAvQB/gEFAgIC/gEGAgUCBgIHAgUCBgIIAgcCCAIJAgcCCAIKAgkCCgILAgkCDAINAg4CDgIPAgwCEAIRAhICEgITAhACFAIVAhYCFgIXAhQCGAIZAhoCGgIbAhgCHAIdAh4CHgIfAhwCIAIhAiICIgIjAiACJAIlAiYCJgInAiQCKAIpAioCKgIrAigCLAItAi4CLgIvAiwCMAIxAjICMgIzAjACNAI1AjYCNgI3AjQCOAI5AjoCOgI7AjgCPAI9Aj4CPgI/AjwCQAJBAkICQgJDAkACRAJFAkYCRgJHAkQCSAJJAkoCSgJLAkgCTAJNAk4CTgJPAkwCUAJRAlICUgJTAlACVAJVAlYCVgJXAlQCWAJZAloCWgJbAlgCXAJdAl4CXgJfAlwCYAJhAmICYgJjAmACZAJlAmYCZgJnAmQCaAJpAmoCagJrAmgCbAJtAm4CbgJvAmwCcAJxAnICcgJzAnACdAJ1AnYCdgJ3AnQCeAJ5AnoCegJ7AngCfAJ9An4CfwJ8An4CfwJ+AoACgQJ/AoACgQKAAoICggKDAoEChAKFAoYChwKEAoYCiAKHAoYCiAKGAokCiQKKAogCiwKIAooC"),
-"material": SubResource("StandardMaterial3D_k3twq"),
+"material": SubResource("StandardMaterial3D_n52xp"),
 "name": "plastic",
 "primitive": 3,
 "uv_scale": Vector4(100.778, 102.778, 0, 0),
@@ -136,7 +97,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 72,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA"),
-"material": SubResource("StandardMaterial3D_xdry2"),
+"material": SubResource("StandardMaterial3D_x6w1g"),
 "name": "window",
 "primitive": 3,
 "uv_scale": Vector4(19.5835, 39.9326, 0, 0),
@@ -148,7 +109,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsA"),
-"material": SubResource("StandardMaterial3D_y2mt1"),
+"material": SubResource("StandardMaterial3D_q2ohc"),
 "name": "_defaultMat",
 "primitive": 3,
 "uv_scale": Vector4(43.3071, 28.594, 0, 0),
@@ -156,25 +117,25 @@ _surfaces = [{
 "vertex_data": PackedByteArray("iy7//wAA/7+LLgAAAAD/vwAAAAAAAP+/AAAAAAAA/78AAP//AAD/v4su//8AAP+//////wAA/7///wAAAAD/v3PRAAAAAP+/c9EAAAAA/79z0f//AAD/v/////8AAP+//////////////////3//f/9//3//f/9//////////////////3//f/9//3//f/9/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ld1xp")
+shadow_mesh = SubResource("ArrayMesh_gwelu")
 metadata/extras = {
 "targetNames": []
 }
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7jlj3"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e5bjn"]
 points = PackedVector3Array(0.6, 0.0999341, 0.43448, 0.349922, 0.536016, 1.27989, 0.6, 0, 0.43448, 0.6, 0.0999341, -0.165624, 0.549961, 0.388529, -0.0656481, -0.350039, 0.536016, 1.27989, 0.349922, 0, 1.27989, 0.549961, 0.388529, -0.165624, 0.0669538, 0.632544, 0.102982, 0.0669538, 0.632544, 0.202958, 0.6, 0, -0.165624, 0.449883, 0.149963, -1.27989, -0.6, 0.0999341, 0.43448, -0.350039, 0, 1.27989, -0.0670713, 0.632544, 0.202958, -0.0670713, 0.632544, 0.102982, -0.550078, 0.388529, -0.165624, -0.550078, 0.388529, -0.0656481, 0.449883, 0, -1.27989, -0.450117, 0.149963, -1.27989, -0.6, 0, 0.43448, -0.6, 0.0999341, -0.165624, -0.450117, 0, -1.27989, -0.6, 0, -0.165624)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dxwpj"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6kry"]
 resource_name = "carTire"
 albedo_color = Color(0.239216, 0.239216, 0.239216, 1)
 metallic = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xckk0"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nekwl"]
 resource_name = "paintYellow"
 albedo_color = Color(1, 0.740017, 0.259434, 1)
 metallic = 1.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_l661m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m040q"]
 _surfaces = [{
 "aabb": AABB(-2.88765e-15, -0.3, -0.3, 0.3, 0.6, 0.6),
 "format": 34896613377,
@@ -208,7 +169,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lobh4"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_f38bq"]
 resource_name = "race_Mesh wheel_frontLeft"
 _surfaces = [{
 "aabb": AABB(-2.88765e-15, -0.3, -0.3, 0.3, 0.6, 0.6),
@@ -216,7 +177,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 354,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwAMAAxADIAMgAzADAANAA1ADYANgA3ADQAOAA5ADoAOgA7ADgAPAA9AD4APgA/ADwAQABBAEIAQgBDAEAARABFAEYARgBHAEQASABJAEoASgBLAEgATABNAE4ATgBPAEwAUABRAFIAUgBTAFAAVABVAFYAVgBXAFQAWABZAFoAWgBbAFgAXABdAF4AXgBfAFwAYABhAGIAYgBjAGAAZABlAGYAZgBnAGQAaABpAGoAagBrAGgAbABtAG4AbgBvAGwAcABxAHIAcgBzAHAAdAB1AHYAdgB3AHQAeAB5AHoAegB7AHgAfAB9AH4AfgB/AHwAgACBAIIAggCDAIAAhACFAIYAhgCHAIQAiACJAIoAigCLAIgAjACNAI4AjgCPAIwAkACRAJIAkgCTAJAAlACVAJYAlgCXAJQAlgCYAJcAmACZAJcAmACaAJkAmgCbAJkAmgCcAJsAnACdAJsAnACeAJ0AngCfAJ0AngCgAJ8AoAChAJ8AoACiAKEAogCjAKEAogCkAKMApAClAKMApACmAKUApgCnAKUApgCoAKcAqACpAKcAqACqAKkAqgCrAKkArACtAK4ArgCvAKwAsACxALIAsgCzALAAtAC1ALYAtgC3ALQAuAC5ALoAugC7ALgAvAC9AL4AvgC/ALwAwADBAMIAwgDDAMAAxADFAMYAxgDHAMQAyADJAMoAygDLAMgAzADNAM4AzgDPAMwA0ADRANIA0gDTANAA1ADVANYA1gDXANQA"),
-"material": SubResource("StandardMaterial3D_dxwpj"),
+"material": SubResource("StandardMaterial3D_f6kry"),
 "name": "carTire",
 "primitive": 3,
 "uv_scale": Vector4(23.622, 25.622, 0, 0),
@@ -228,7 +189,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 354,
 "index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAMABAAFAAMABAAGAAUABgAHAAUABgAIAAcACAAJAAcACAAKAAkACgALAAkACgAMAAsADAANAAsADAAOAA0ADgAPAA0ADgAQAA8AEAARAA8AEAASABEAEgATABEAEgAUABMAFAAVABMAFAAWABUAFgAXABUAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwAMAAxADIAMgAzADAANAA1ADYANgA3ADQAOAA5ADoAOgA7ADgAPAA9AD4APgA/ADwAQABBAEIAQgBDAEAARABFAEYARgBHAEQARwBIAEQARwBJAEgARwBKAEkASgBLAEkASwBMAEkATQBLAEoATABOAEkASgBPAE0ATABQAE4ATwBRAE0AUABSAE4ATwBTAFEAUgBUAE4ATwBVAFMAUgBWAFQAVQBXAFMAVgBYAFQAVQBZAFcAWABaAFQAVQBbAFkAWABcAFoAWwBdAFkAXABeAFoAWwBfAF0AXABgAF4AWwBhAF8AYABiAF4AYQBjAF8AYgBkAF4AYQBlAGMAYgBmAGQAZQBnAGMAZgBoAGQAZQBpAGcAaABqAGQAZQBrAGkAawBsAGkAawBtAGwAbQBrAGoAaABuAGoAbgBtAGoAawBvAGoAbwBwAGoAbwBxAHAAcQByAHAAcQBzAHIAdAB1AHYAdgB3AHQAeAB5AHoAegB7AHgAfAB9AH4AfgB/AHwAgACBAIIAggCDAIAAhACFAIYAhgCHAIQAiACJAIoAigCLAIgAjACNAI4AjgCPAIwAkACRAJIAkgCTAJAAlACVAJYAlgCXAJQAmACZAJoAmgCbAJgAnACdAJ4AngCfAJwAoAChAKIAogCjAKAApAClAKYApgCnAKQA"),
-"material": SubResource("StandardMaterial3D_k3twq"),
+"material": SubResource("StandardMaterial3D_n52xp"),
 "name": "plastic",
 "primitive": 3,
 "uv_scale": Vector4(25.0609, 24.8767, 0, 0),
@@ -240,7 +201,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 144,
 "index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAMABAAFAAMABAAGAAUABgAHAAUABwAIAAUACQAHAAYACAAKAAUABgALAAkACAAMAAoACwANAAkADAAOAAoACwAPAA0ADgAQAAoACwARAA8ADgASABAAEQATAA8AEgAUABAAEQAVABMAFAAWABAAEQAXABUAFAAYABYAFwAZABUAGAAaABYAFwAbABkAGAAcABoAFwAdABsAHAAeABoAHQAfABsAHgAgABoAHQAhAB8AHgAiACAAIQAjAB8AIgAkACAAIQAlACMAJAAmACAAJAAnACYAJwAoACYAIQApACUAKQAmACgAKQAqACUAKQAoACoAKQArACYAKQAsACsALAAtACsALAAuAC0ALgAvAC0A"),
-"material": SubResource("StandardMaterial3D_xckk0"),
+"material": SubResource("StandardMaterial3D_nekwl"),
 "name": "paintYellow",
 "primitive": 3,
 "uv_scale": Vector4(20.0787, 22.0787, 0, 0),
@@ -248,83 +209,85 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AADeXqL7/78AAP9/////vwAAIKGi+/+/AAD/P9ju/78AAP+/2O7/vwAAfSWB2v+/AACB2oHa/78AAP9/wtL/vwAAk2rwz/+/AABrlfDP/78AACYR/7//vwAA2O7/v/+/AACdVqzH/78AAGGprMf/vwAAeUWFuv+/AACFuoW6/78AAFwEIKH/vwAAovsgof+/AABSOGGp/78AAKzHYan/vwAADjBrlf+/AADwz2uV/78AAAAA/3//vwAA////f/+/AAA8Lf9//78AAMLS/3//vwAAXATeXv+/AADwz5Nq/78AAA4wk2r/vwAAovveXv+/AABSOJ1W/78AAKzHnVb/vwAAJhH/P/+/AADY7v8//78AAHlFeUX/vwAAhbp5Rf+/AACdVlI4/78AAGGpUjj/vwAAfSV9Jf+/AACTag4w/78AAP9/PC3/vwAAgdp9Jf+/AABrlQ4w/78AAP8/JhH/vwAA/78mEf+/AADeXlwE/78AACChXAT/vwAA/38AAP+//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_l661m")
+shadow_mesh = SubResource("ArrayMesh_m040q")
 metadata/extras = {
 "targetNames": []
 }
 
-[sub_resource type="LabelSettings" id="LabelSettings_gej51"]
+[sub_resource type="LabelSettings" id="LabelSettings_e5bjn"]
 font_size = 32
 
 [node name="rc_player" type="VehicleBody3D"]
-script = SubResource("GDScript_e5bjn")
+mass = 80.0
+script = ExtResource("1_nqw02")
 
 [node name="body" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34997e-13, 0.1, 0)
-mesh = SubResource("ArrayMesh_lmnyq")
+mesh = SubResource("ArrayMesh_rkybe")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34997e-13, 0.1, 0)
-shape = SubResource("ConvexPolygonShape3D_7jlj3")
+shape = SubResource("ConvexPolygonShape3D_e5bjn")
 
 [node name="frontLeft" type="VehicleWheel3D" parent="."]
-transform = Transform3D(-0.6, 0, -5.24537e-08, 0, 0.6, 0, 5.24537e-08, 0, -0.6, -0.5, 0.3, -0.65)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.5, 0.3, -0.65)
 use_as_steering = true
 wheel_radius = 0.4
 
-[node name="wheel_frontRight" type="MeshInstance3D" parent="frontLeft"]
-transform = Transform3D(-1.66667, 0, 1.45705e-07, 0, 1.66667, 0, -1.45705e-07, 0, -1.66667, -1.41667, 0, -0.0168563)
-mesh = SubResource("ArrayMesh_lobh4")
+[node name="wheel_frontLeft" type="MeshInstance3D" parent="frontLeft"]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -0.15, 0, -0.0101138)
+mesh = SubResource("ArrayMesh_f38bq")
 skeleton = NodePath("")
 
 [node name="frontRight" type="VehicleWheel3D" parent="."]
-transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0.5, 0.3, -0.65)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.5, 0.3, -0.65)
 use_as_steering = true
 wheel_radius = 0.4
 
-[node name="wheel_frontLeft" type="MeshInstance3D" parent="frontRight"]
-transform = Transform3D(1.66667, 0, -3.97364e-07, 0, 1.66667, 0, 3.97364e-07, 0, 1.66667, 1.41667, 0, -0.016856)
-mesh = SubResource("ArrayMesh_lobh4")
-skeleton = NodePath("")
-
-[node name="backRight" type="VehicleWheel3D" parent="."]
-transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0.5, 0.3, 0.9)
-use_as_traction = true
-wheel_radius = 0.4
-wheel_friction_slip = 9.5
-
-[node name="wheel_backRight" type="MeshInstance3D" parent="backRight"]
-transform = Transform3D(-1.66667, 0, 2.5166e-07, 0, 1.66667, 0, -2.5166e-07, 0, -1.66667, 0.25, 0, 0.0331438)
-mesh = SubResource("ArrayMesh_lobh4")
+[node name="wheel_frontRight" type="MeshInstance3D" parent="frontRight"]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0.15, 0, -0.0101138)
+mesh = SubResource("ArrayMesh_f38bq")
 skeleton = NodePath("")
 
 [node name="backLeft" type="VehicleWheel3D" parent="."]
-transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -0.5, 0.3, 0.9)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -0.5, 0.3, 0.9)
 use_as_traction = true
 wheel_radius = 0.4
 wheel_friction_slip = 9.5
 
 [node name="wheel_backLeft" type="MeshInstance3D" parent="backLeft"]
-transform = Transform3D(1.66667, 0, -3.97364e-07, 0, 1.66667, 0, 3.97364e-07, 0, 1.66667, -0.25, 0, 0.0331438)
-mesh = SubResource("ArrayMesh_lobh4")
+transform = Transform3D(1, 0, -2.38419e-07, 0, 1, 0, 2.38419e-07, 0, 1, -0.15, 0, 0.0198863)
+mesh = SubResource("ArrayMesh_f38bq")
+skeleton = NodePath("")
+
+[node name="backRight" type="VehicleWheel3D" parent="."]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.5, 0.3, 0.9)
+use_as_traction = true
+wheel_radius = 0.4
+wheel_friction_slip = 9.5
+
+[node name="wheel_backRight" type="MeshInstance3D" parent="backRight"]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0.15, 0, 0.0198863)
+mesh = SubResource("ArrayMesh_f38bq")
 skeleton = NodePath("")
 
 [node name="centerMass" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 0)
+top_level = true
 
 [node name="Camera3D" type="Camera3D" parent="centerMass"]
 transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0, 1.6, 4)
-rotation_order = 0
 current = true
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 11.0
-offset_top = -45.0
-offset_right = 256.0
+offset_left = 21.0
+offset_top = -44.0
+offset_right = 263.0
+offset_bottom = 1.0
 grow_vertical = 0
 text = "0 mph"
-label_settings = SubResource("LabelSettings_gej51")
+label_settings = SubResource("LabelSettings_e5bjn")
