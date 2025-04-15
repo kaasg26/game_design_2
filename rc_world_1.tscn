@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cwb75uxc01oqa"]
 
 [ext_resource type="MeshLibrary" uid="uid://dcmvb87qbtt40" path="res://mesh/rc_tiles_1.tres" id="1_orelr"]
-[ext_resource type="PackedScene" path="res://rc_player.tscn" id="2_w7q12"]
+[ext_resource type="PackedScene" uid="uid://b00luksw4f1a1" path="res://rc_player.tscn" id="2_w7q12"]
 [ext_resource type="PackedScene" uid="uid://dtnlhwb0cpqfm" path="res://rc_enemy.tscn" id="3_rjgen"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w7q12"]
