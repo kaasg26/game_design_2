@@ -1,0 +1,328 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 6358,
+      "max": [
+        3.3443899154663086,
+        2.7446000576019287,
+        3.9243199825286865
+      ],
+      "min": [
+        -3.3404901027679443,
+        -1.7604600191116333,
+        -4.173920154571533
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 76296,
+      "componentType": 5126,
+      "count": 6358,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 11784,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1396,
+      "max": [
+        62.5
+      ],
+      "min": [
+        0.041669998317956924
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1396,
+      "max": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        -0.9999300241470337,
+        -0.009469999931752682
+      ],
+      "type": "VEC4"
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 2,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "CylinderAction",
+      "samplers": [
+        {
+          "input": 3,
+          "interpolation": "LINEAR",
+          "output": 4
+        }
+      ]
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Toby.The.Wild.Man (https://sketchfab.com/Toby.The.Wild.Man)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/jet-pack-incomplete-5efabb0e31394fccb0583861cd8bc0ac",
+      "title": "Jet-pack. Incomplete"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 47136,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 152592,
+      "byteOffset": 47136,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5584,
+      "byteOffset": 199728,
+      "name": "floatBufferViews"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22336,
+      "byteOffset": 205312,
+      "byteStride": 16,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 227648,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "glossinessFactor": 0.2666666507720947,
+          "specularFactor": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929
+          ]
+        }
+      },
+      "name": "Material.002"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cylinder_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Cylinder",
+      "scale": [
+        0.3164600133895874,
+        0.3164600133895874,
+        0.3164600133895874
+      ],
+      "translation": [
+        0.057429999113082886,
+        0.07790999859571457,
+        1.4831600189208984
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "Cylinder_0"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        40.896950000000004,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        11.92582,
+        -39.11949,
+        0.0,
+        0.0,
+        39.11949,
+        11.92582,
+        0.0,
+        0.0,
+        1.41001,
+        1.4599099999999998,
+        1.0
+      ],
+      "name": "Area"
+    },
+    {
+      "name": "Area"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        35.3761,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        35.3761,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        35.3761,
+        0.0,
+        0.08199000000000002,
+        -0.024820000000000002,
+        3.1576,
+        1.0
+      ],
+      "name": "Area.001"
+    },
+    {
+      "name": "Area.001"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        -33.08727999999999,
+        -1.0000000000000004e-05,
+        0.0,
+        0.0,
+        0.0,
+        -9.648469999999998,
+        -31.64926,
+        0.0,
+        1.0000000000000004e-05,
+        -31.64926,
+        9.648469999999998,
+        0.0,
+        0.0,
+        -1.70733,
+        1.9771299999999998,
+        1.0
+      ],
+      "name": "Area.002"
+    },
+    {
+      "name": "Area.002"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
