@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://v80f4ri2dau1"
-path="res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-52b02c1bd1048bdb36d96fd2ae90adad.mesh"
+path="res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-da771480fdb321e96b5c1c061caff846.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-52b02c1bd1048bdb36d96fd2ae90adad.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-da771480fdb321e96b5c1c061caff846.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Hay_Bale_Box.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-52b02c1bd1048bdb36d96fd2ae90adad.mesh", "res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-52b02c1bd1048bdb36d96fd2ae90adad.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Hay_Bale_Box.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-da771480fdb321e96b5c1c061caff846.mesh", "res://.godot/imported/Prop_Decorative_Hay_Bale_Box.obj-da771480fdb321e96b5c1c061caff846.mesh"]
 
 [params]
 

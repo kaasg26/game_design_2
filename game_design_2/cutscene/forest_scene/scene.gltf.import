@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cjharo5lnpxj2"
-path="res://.godot/imported/scene.gltf-e20566ae57afd208907156f912a5ba60.scn"
+valid=false
 
 [deps]
 
-source_file="res://cutscene/forest_scene/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-e20566ae57afd208907156f912a5ba60.scn"]
+source_file="res://game_design_2/cutscene/forest_scene/scene.gltf"
 
 [params]
 

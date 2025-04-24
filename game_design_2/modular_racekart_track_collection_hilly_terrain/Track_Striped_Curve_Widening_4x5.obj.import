@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://efydjmtgkpk5"
-path="res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-d00b1a4cc35e2b0926c06ef4e76e3051.mesh"
+path="res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-173ea211a9c8826011929ad5006f06bd.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-d00b1a4cc35e2b0926c06ef4e76e3051.mesh"]
+files=["res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-173ea211a9c8826011929ad5006f06bd.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Striped_Curve_Widening_4x5.obj"
-dest_files=["res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-d00b1a4cc35e2b0926c06ef4e76e3051.mesh", "res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-d00b1a4cc35e2b0926c06ef4e76e3051.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Striped_Curve_Widening_4x5.obj"
+dest_files=["res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-173ea211a9c8826011929ad5006f06bd.mesh", "res://.godot/imported/Track_Striped_Curve_Widening_4x5.obj-173ea211a9c8826011929ad5006f06bd.mesh"]
 
 [params]
 

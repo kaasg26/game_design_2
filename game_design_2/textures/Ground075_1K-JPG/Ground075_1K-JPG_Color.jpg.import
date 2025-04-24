@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v2dxxqei7yea"
-path.s3tc="res://.godot/imported/Ground075_1K-JPG_Color.jpg-c347de6645c5f85f6cc5457ada80fde0.s3tc.ctex"
+path.s3tc="res://.godot/imported/Ground075_1K-JPG_Color.jpg-c488cd6ae82d480a4ff8eab925094e0d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Ground075_1K-JPG/Ground075_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Ground075_1K-JPG_Color.jpg-c347de6645c5f85f6cc5457ada80fde0.s3tc.ctex"]
+source_file="res://game_design_2/textures/Ground075_1K-JPG/Ground075_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Ground075_1K-JPG_Color.jpg-c488cd6ae82d480a4ff8eab925094e0d.s3tc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmnilsvfxw7pn"
-path="res://.godot/imported/ChristmasTreeOrnament016.png-29e01f0f4f42db7fb2b7c6ff9173a661.ctex"
+path="res://.godot/imported/ChristmasTreeOrnament016.png-27e5a8381ae45439fee8e8136e901c6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016.png"
-dest_files=["res://.godot/imported/ChristmasTreeOrnament016.png-29e01f0f4f42db7fb2b7c6ff9173a661.ctex"]
+source_file="res://game_design_2/textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016.png"
+dest_files=["res://.godot/imported/ChristmasTreeOrnament016.png-27e5a8381ae45439fee8e8136e901c6a.ctex"]
 
 [params]
 

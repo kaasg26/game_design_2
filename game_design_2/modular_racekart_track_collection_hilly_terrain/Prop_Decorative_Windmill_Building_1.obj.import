@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://brgsed2g22of1"
-path="res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-911ed40b13c30d975773f29d1a205628.mesh"
+path="res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-d453d9e8669469874b5032aab65e2fa0.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-911ed40b13c30d975773f29d1a205628.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-d453d9e8669469874b5032aab65e2fa0.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Windmill_Building_1.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-911ed40b13c30d975773f29d1a205628.mesh", "res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-911ed40b13c30d975773f29d1a205628.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Windmill_Building_1.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-d453d9e8669469874b5032aab65e2fa0.mesh", "res://.godot/imported/Prop_Decorative_Windmill_Building_1.obj-d453d9e8669469874b5032aab65e2fa0.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://crp6ov1rixe27"
-path="res://.godot/imported/Track_Striped_Incline_Single.obj-06960cdf7b7f09ad37612f2a90d96a44.mesh"
+path="res://.godot/imported/Track_Striped_Incline_Single.obj-208607f9f05bf037d771605ff0299be4.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Striped_Incline_Single.obj-06960cdf7b7f09ad37612f2a90d96a44.mesh"]
+files=["res://.godot/imported/Track_Striped_Incline_Single.obj-208607f9f05bf037d771605ff0299be4.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Striped_Incline_Single.obj"
-dest_files=["res://.godot/imported/Track_Striped_Incline_Single.obj-06960cdf7b7f09ad37612f2a90d96a44.mesh", "res://.godot/imported/Track_Striped_Incline_Single.obj-06960cdf7b7f09ad37612f2a90d96a44.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Striped_Incline_Single.obj"
+dest_files=["res://.godot/imported/Track_Striped_Incline_Single.obj-208607f9f05bf037d771605ff0299be4.mesh", "res://.godot/imported/Track_Striped_Incline_Single.obj-208607f9f05bf037d771605ff0299be4.mesh"]
 
 [params]
 

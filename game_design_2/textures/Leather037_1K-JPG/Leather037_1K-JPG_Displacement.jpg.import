@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do3jhbhdhhfvy"
-path="res://.godot/imported/Leather037_1K-JPG_Displacement.jpg-08e00a92aeb42f57bd32cb0c14e0ed25.ctex"
+path="res://.godot/imported/Leather037_1K-JPG_Displacement.jpg-295699c3c2a0e3da46a809aa27e1133f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Leather037_1K-JPG/Leather037_1K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Leather037_1K-JPG_Displacement.jpg-08e00a92aeb42f57bd32cb0c14e0ed25.ctex"]
+source_file="res://game_design_2/textures/Leather037_1K-JPG/Leather037_1K-JPG_Displacement.jpg"
+dest_files=["res://.godot/imported/Leather037_1K-JPG_Displacement.jpg-295699c3c2a0e3da46a809aa27e1133f.ctex"]
 
 [params]
 

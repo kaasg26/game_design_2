@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cnrako6muiywp"
-path="res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-8ab0ad8bc039a7ec01ee4202fb1917bf.mesh"
+path="res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-3da0a38804f6d6dcd5620b8a7ff0903f.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-8ab0ad8bc039a7ec01ee4202fb1917bf.mesh"]
+files=["res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-3da0a38804f6d6dcd5620b8a7ff0903f.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Cliff_Edge_Standard_1_Tall_Single.obj"
-dest_files=["res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-8ab0ad8bc039a7ec01ee4202fb1917bf.mesh", "res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-8ab0ad8bc039a7ec01ee4202fb1917bf.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Cliff_Edge_Standard_1_Tall_Single.obj"
+dest_files=["res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-3da0a38804f6d6dcd5620b8a7ff0903f.mesh", "res://.godot/imported/Track_Cliff_Edge_Standard_1_Tall_Single.obj-3da0a38804f6d6dcd5620b8a7ff0903f.mesh"]
 
 [params]
 

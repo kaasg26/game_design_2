@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bwjldu2ws66pd"
-path="res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-149cf49f2fa589a58aeb9c111aefb211.mesh"
+path="res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-46f56d083cce08c5a7edfe46082d74cd.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-149cf49f2fa589a58aeb9c111aefb211.mesh"]
+files=["res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-46f56d083cce08c5a7edfe46082d74cd.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj"
-dest_files=["res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-149cf49f2fa589a58aeb9c111aefb211.mesh", "res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-149cf49f2fa589a58aeb9c111aefb211.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj"
+dest_files=["res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-46f56d083cce08c5a7edfe46082d74cd.mesh", "res://.godot/imported/Terrain_Cliff_1_Tall_Corner_Inner_2x2.obj-46f56d083cce08c5a7edfe46082d74cd.mesh"]
 
 [params]
 

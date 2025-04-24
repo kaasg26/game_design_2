@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce5pkuc5t5gew"
-path="res://.godot/imported/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg-dea434ee0c3375405fc7fee75c69a65e.ctex"
+path="res://.godot/imported/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg-edc019898cb7af434b23b877298e5bcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg-dea434ee0c3375405fc7fee75c69a65e.ctex"]
+source_file="res://game_design_2/textures/ChristmasTreeOrnament016_1K-JPG/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg"
+dest_files=["res://.godot/imported/ChristmasTreeOrnament016_1K-JPG_Roughness.jpg-edc019898cb7af434b23b877298e5bcf.ctex"]
 
 [params]
 

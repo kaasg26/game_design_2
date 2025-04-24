@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://blfj84duqfh1j"
-path="res://.godot/imported/Track_Standard_Esse_Double.obj-241481766fd6257e5989b732d2f9430e.mesh"
+path="res://.godot/imported/Track_Standard_Esse_Double.obj-275474d11710c0f2c252e9d62064e82d.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Standard_Esse_Double.obj-241481766fd6257e5989b732d2f9430e.mesh"]
+files=["res://.godot/imported/Track_Standard_Esse_Double.obj-275474d11710c0f2c252e9d62064e82d.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Standard_Esse_Double.obj"
-dest_files=["res://.godot/imported/Track_Standard_Esse_Double.obj-241481766fd6257e5989b732d2f9430e.mesh", "res://.godot/imported/Track_Standard_Esse_Double.obj-241481766fd6257e5989b732d2f9430e.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Standard_Esse_Double.obj"
+dest_files=["res://.godot/imported/Track_Standard_Esse_Double.obj-275474d11710c0f2c252e9d62064e82d.mesh", "res://.godot/imported/Track_Standard_Esse_Double.obj-275474d11710c0f2c252e9d62064e82d.mesh"]
 
 [params]
 

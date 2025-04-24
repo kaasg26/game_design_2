@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1uxwqsp3l2od"
-path="res://.godot/imported/Ground078_1K-JPG_AmbientOcclusion.jpg-8856101685f1076dbb8599c8eac2322d.ctex"
+path="res://.godot/imported/Ground078_1K-JPG_AmbientOcclusion.jpg-1d1bd2d3edbde6cf42c615c508a41632.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Ground078_1K-JPG/Ground078_1K-JPG_AmbientOcclusion.jpg"
-dest_files=["res://.godot/imported/Ground078_1K-JPG_AmbientOcclusion.jpg-8856101685f1076dbb8599c8eac2322d.ctex"]
+source_file="res://game_design_2/textures/Ground078_1K-JPG/Ground078_1K-JPG_AmbientOcclusion.jpg"
+dest_files=["res://.godot/imported/Ground078_1K-JPG_AmbientOcclusion.jpg-1d1bd2d3edbde6cf42c615c508a41632.ctex"]
 
 [params]
 

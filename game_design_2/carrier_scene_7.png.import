@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xpsa2omid7ck"
-path="res://.godot/imported/carrier_scene_7.png-ff9bc4a17a06b921e3843e23de30595a.ctex"
+path="res://.godot/imported/carrier_scene_7.png-3fab5f29373cb2c398647a0dae1e508c.ctex"
 metadata={
 "vram_texture": false
 }
@@ -13,8 +13,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://carrier_scene_7.png"
-dest_files=["res://.godot/imported/carrier_scene_7.png-ff9bc4a17a06b921e3843e23de30595a.ctex"]
+source_file="res://game_design_2/carrier_scene_7.png"
+dest_files=["res://.godot/imported/carrier_scene_7.png-3fab5f29373cb2c398647a0dae1e508c.ctex"]
 
 [params]
 

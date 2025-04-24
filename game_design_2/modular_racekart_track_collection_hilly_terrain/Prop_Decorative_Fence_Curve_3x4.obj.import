@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://hbqt3fav6860"
-path="res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-fc89be219602b2c36732c59df81cfaf9.mesh"
+path="res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-5b089dff43543c457862637c68b31571.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-fc89be219602b2c36732c59df81cfaf9.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-5b089dff43543c457862637c68b31571.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Curve_3x4.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-fc89be219602b2c36732c59df81cfaf9.mesh", "res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-fc89be219602b2c36732c59df81cfaf9.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Curve_3x4.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-5b089dff43543c457862637c68b31571.mesh", "res://.godot/imported/Prop_Decorative_Fence_Curve_3x4.obj-5b089dff43543c457862637c68b31571.mesh"]
 
 [params]
 

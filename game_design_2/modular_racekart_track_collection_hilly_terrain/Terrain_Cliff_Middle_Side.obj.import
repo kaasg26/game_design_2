@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cqk2ckmmgx43q"
-path="res://.godot/imported/Terrain_Cliff_Middle_Side.obj-278260fa8f4a9ae1d9cf2848ce5610b9.mesh"
+path="res://.godot/imported/Terrain_Cliff_Middle_Side.obj-e405dc3c1e77be2c028109b18d6301e5.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Terrain_Cliff_Middle_Side.obj-278260fa8f4a9ae1d9cf2848ce5610b9.mesh"]
+files=["res://.godot/imported/Terrain_Cliff_Middle_Side.obj-e405dc3c1e77be2c028109b18d6301e5.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Terrain_Cliff_Middle_Side.obj"
-dest_files=["res://.godot/imported/Terrain_Cliff_Middle_Side.obj-278260fa8f4a9ae1d9cf2848ce5610b9.mesh", "res://.godot/imported/Terrain_Cliff_Middle_Side.obj-278260fa8f4a9ae1d9cf2848ce5610b9.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Terrain_Cliff_Middle_Side.obj"
+dest_files=["res://.godot/imported/Terrain_Cliff_Middle_Side.obj-e405dc3c1e77be2c028109b18d6301e5.mesh", "res://.godot/imported/Terrain_Cliff_Middle_Side.obj-e405dc3c1e77be2c028109b18d6301e5.mesh"]
 
 [params]
 

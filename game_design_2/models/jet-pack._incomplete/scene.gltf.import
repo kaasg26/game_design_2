@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4cqav8djy183"
-path="res://.godot/imported/scene.gltf-15726dc9d16caa02910221f9030a23c8.scn"
+path="res://.godot/imported/scene.gltf-2f7a655a53ec9f4d84524155f4596768.scn"
 
 [deps]
 
-source_file="res://models/jet-pack._incomplete/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-15726dc9d16caa02910221f9030a23c8.scn"]
+source_file="res://game_design_2/models/jet-pack._incomplete/scene.gltf"
+dest_files=["res://.godot/imported/scene.gltf-2f7a655a53ec9f4d84524155f4596768.scn"]
 
 [params]
 

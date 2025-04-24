@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://ch5x8mo5jhtxu"
-path="res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-bbb878725542ecd889fcb0bafe8fa80d.mesh"
+path="res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-9805c9ddb334c242538e5c9a605232fa.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-bbb878725542ecd889fcb0bafe8fa80d.mesh"]
+files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-9805c9ddb334c242538e5c9a605232fa.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Incline_Sharp_Flat_Floating.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-bbb878725542ecd889fcb0bafe8fa80d.mesh", "res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-bbb878725542ecd889fcb0bafe8fa80d.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Incline_Sharp_Flat_Floating.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-9805c9ddb334c242538e5c9a605232fa.mesh", "res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Floating.obj-9805c9ddb334c242538e5c9a605232fa.mesh"]
 
 [params]
 

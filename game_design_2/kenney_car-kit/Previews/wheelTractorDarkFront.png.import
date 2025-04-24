@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fkykvb4uw5xj"
-path="res://.godot/imported/wheelTractorDarkFront.png-2ffa764686181939f5b0537f39ea14c7.ctex"
+path="res://.godot/imported/wheelTractorDarkFront.png-cfd306bb55ab95d61043608cad821039.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_car-kit/Previews/wheelTractorDarkFront.png"
-dest_files=["res://.godot/imported/wheelTractorDarkFront.png-2ffa764686181939f5b0537f39ea14c7.ctex"]
+source_file="res://game_design_2/kenney_car-kit/Previews/wheelTractorDarkFront.png"
+dest_files=["res://.godot/imported/wheelTractorDarkFront.png-cfd306bb55ab95d61043608cad821039.ctex"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://tkyvpn6h6g3g"
-path="res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-98bb69e03cd2f570556a573b7f43e996.mesh"
+path="res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-d82811686490a754826701ae4bd3c921.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-98bb69e03cd2f570556a573b7f43e996.mesh"]
+files=["res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-d82811686490a754826701ae4bd3c921.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Start_Flat_to_Gentle.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-98bb69e03cd2f570556a573b7f43e996.mesh", "res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-98bb69e03cd2f570556a573b7f43e996.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Start_Flat_to_Gentle.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-d82811686490a754826701ae4bd3c921.mesh", "res://.godot/imported/Track_Bridge_Start_Flat_to_Gentle.obj-d82811686490a754826701ae4bd3c921.mesh"]
 
 [params]
 

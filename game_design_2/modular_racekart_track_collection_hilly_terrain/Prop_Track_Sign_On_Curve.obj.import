@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://c3snv4t36krgv"
-path="res://.godot/imported/Prop_Track_Sign_On_Curve.obj-3a28f7582c6945ba6d03cc5c0a37118b.mesh"
+path="res://.godot/imported/Prop_Track_Sign_On_Curve.obj-2e265449970e73a6d186d83fceb20b6e.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Track_Sign_On_Curve.obj-3a28f7582c6945ba6d03cc5c0a37118b.mesh"]
+files=["res://.godot/imported/Prop_Track_Sign_On_Curve.obj-2e265449970e73a6d186d83fceb20b6e.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Track_Sign_On_Curve.obj"
-dest_files=["res://.godot/imported/Prop_Track_Sign_On_Curve.obj-3a28f7582c6945ba6d03cc5c0a37118b.mesh", "res://.godot/imported/Prop_Track_Sign_On_Curve.obj-3a28f7582c6945ba6d03cc5c0a37118b.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Track_Sign_On_Curve.obj"
+dest_files=["res://.godot/imported/Prop_Track_Sign_On_Curve.obj-2e265449970e73a6d186d83fceb20b6e.mesh", "res://.godot/imported/Prop_Track_Sign_On_Curve.obj-2e265449970e73a6d186d83fceb20b6e.mesh"]
 
 [params]
 

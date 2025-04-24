@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lbp720ek5abf"
-path="res://.godot/imported/scene.gltf-845f2a331d6f328562e66975919cf881.scn"
+valid=false
 
 [deps]
 
-source_file="res://models/peach_castle/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-845f2a331d6f328562e66975919cf881.scn"]
+source_file="res://game_design_2/models/peach_castle/scene.gltf"
 
 [params]
 

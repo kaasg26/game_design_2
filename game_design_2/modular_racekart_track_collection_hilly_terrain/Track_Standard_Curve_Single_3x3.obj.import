@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://g4vo6yjv36v0"
-path="res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-0695ccca9e12a47ea6b059cc65a16321.mesh"
+path="res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-43309e3749257f1653e9a765c6fcf2ef.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-0695ccca9e12a47ea6b059cc65a16321.mesh"]
+files=["res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-43309e3749257f1653e9a765c6fcf2ef.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Standard_Curve_Single_3x3.obj"
-dest_files=["res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-0695ccca9e12a47ea6b059cc65a16321.mesh", "res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-0695ccca9e12a47ea6b059cc65a16321.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Standard_Curve_Single_3x3.obj"
+dest_files=["res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-43309e3749257f1653e9a765c6fcf2ef.mesh", "res://.godot/imported/Track_Standard_Curve_Single_3x3.obj-43309e3749257f1653e9a765c6fcf2ef.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dq5x8gmn8l1vc"
-path="res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-86ea8e40bd05e70cab93bc27aa32fe8d.mesh"
+path="res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-75fd7257b9ab0f9ede2398b5d5c0c034.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-86ea8e40bd05e70cab93bc27aa32fe8d.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-75fd7257b9ab0f9ede2398b5d5c0c034.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Hay_Bale_Barrel.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-86ea8e40bd05e70cab93bc27aa32fe8d.mesh", "res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-86ea8e40bd05e70cab93bc27aa32fe8d.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Hay_Bale_Barrel.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-75fd7257b9ab0f9ede2398b5d5c0c034.mesh", "res://.godot/imported/Prop_Decorative_Hay_Bale_Barrel.obj-75fd7257b9ab0f9ede2398b5d5c0c034.mesh"]
 
 [params]
 

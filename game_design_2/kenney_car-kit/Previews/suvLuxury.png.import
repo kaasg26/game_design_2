@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6xnikjv5ottt"
-path="res://.godot/imported/suvLuxury.png-74071e6176d3fd037fcaff4c65854eb0.ctex"
+path="res://.godot/imported/suvLuxury.png-8e51349906c6e2b57acc039fb565fe28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_car-kit/Previews/suvLuxury.png"
-dest_files=["res://.godot/imported/suvLuxury.png-74071e6176d3fd037fcaff4c65854eb0.ctex"]
+source_file="res://game_design_2/kenney_car-kit/Previews/suvLuxury.png"
+dest_files=["res://.godot/imported/suvLuxury.png-8e51349906c6e2b57acc039fb565fe28.ctex"]
 
 [params]
 

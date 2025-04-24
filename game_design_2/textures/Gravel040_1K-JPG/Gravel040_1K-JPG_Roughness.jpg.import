@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcp0oh7db1kxk"
-path="res://.godot/imported/Gravel040_1K-JPG_Roughness.jpg-6b6c871a80c89ca68ce75e96de534f87.ctex"
+path="res://.godot/imported/Gravel040_1K-JPG_Roughness.jpg-870d2c16f9a2544bef45ef1361246028.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Gravel040_1K-JPG/Gravel040_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/Gravel040_1K-JPG_Roughness.jpg-6b6c871a80c89ca68ce75e96de534f87.ctex"]
+source_file="res://game_design_2/textures/Gravel040_1K-JPG/Gravel040_1K-JPG_Roughness.jpg"
+dest_files=["res://.godot/imported/Gravel040_1K-JPG_Roughness.jpg-870d2c16f9a2544bef45ef1361246028.ctex"]
 
 [params]
 

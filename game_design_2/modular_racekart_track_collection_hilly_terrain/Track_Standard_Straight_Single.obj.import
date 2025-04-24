@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dvsthanjjrqp4"
-path="res://.godot/imported/Track_Standard_Straight_Single.obj-fcde0958ea37dde4de0480b8b7d97b94.mesh"
+path="res://.godot/imported/Track_Standard_Straight_Single.obj-49e428de14f5de500513cc57a2558c4f.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Standard_Straight_Single.obj-fcde0958ea37dde4de0480b8b7d97b94.mesh"]
+files=["res://.godot/imported/Track_Standard_Straight_Single.obj-49e428de14f5de500513cc57a2558c4f.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Standard_Straight_Single.obj"
-dest_files=["res://.godot/imported/Track_Standard_Straight_Single.obj-fcde0958ea37dde4de0480b8b7d97b94.mesh", "res://.godot/imported/Track_Standard_Straight_Single.obj-fcde0958ea37dde4de0480b8b7d97b94.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Standard_Straight_Single.obj"
+dest_files=["res://.godot/imported/Track_Standard_Straight_Single.obj-49e428de14f5de500513cc57a2558c4f.mesh", "res://.godot/imported/Track_Standard_Straight_Single.obj-49e428de14f5de500513cc57a2558c4f.mesh"]
 
 [params]
 

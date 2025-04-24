@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ohnovixg0vkh"
+path="res://.godot/imported/Track_Striped_Curve_Widening_5x6.obj-625389ef9bd8f7c6b8e2211570b17abc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Track_Striped_Curve_Widening_5x6.obj-625389ef9bd8f7c6b8e2211570b17abc.mesh"]
+
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Striped_Curve_Widening_5x6.obj"
+dest_files=["res://.godot/imported/Track_Striped_Curve_Widening_5x6.obj-625389ef9bd8f7c6b8e2211570b17abc.mesh", "res://.godot/imported/Track_Striped_Curve_Widening_5x6.obj-625389ef9bd8f7c6b8e2211570b17abc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

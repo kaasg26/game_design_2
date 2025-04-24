@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://vsjxeh521fru"
-path="res://.godot/imported/scene.gltf-d3c8479263c5f0517e1e1fe2d81ebc3e.scn"
+valid=false
 
 [deps]
 
-source_file="res://models/toon_cat_free/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-d3c8479263c5f0517e1e1fe2d81ebc3e.scn"]
+source_file="res://game_design_2/models/toon_cat_free/scene.gltf"
 
 [params]
 

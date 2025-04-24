@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://beagmvlyhmdn0"
-path="res://.godot/imported/Prop_Decorative_Fence_Railing.obj-6d63a6ce13bbe5fd7b7903eed71d9601.mesh"
+path="res://.godot/imported/Prop_Decorative_Fence_Railing.obj-9674be0ecf123d64979998d321ab1055.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Fence_Railing.obj-6d63a6ce13bbe5fd7b7903eed71d9601.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Fence_Railing.obj-9674be0ecf123d64979998d321ab1055.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Railing.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Fence_Railing.obj-6d63a6ce13bbe5fd7b7903eed71d9601.mesh", "res://.godot/imported/Prop_Decorative_Fence_Railing.obj-6d63a6ce13bbe5fd7b7903eed71d9601.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Railing.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Fence_Railing.obj-9674be0ecf123d64979998d321ab1055.mesh", "res://.godot/imported/Prop_Decorative_Fence_Railing.obj-9674be0ecf123d64979998d321ab1055.mesh"]
 
 [params]
 

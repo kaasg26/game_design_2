@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bqrnxggi32of7"
-path="res://.godot/imported/Track_Bridge_Curve_3x3.obj-db3c968dd5ad0748431f24ac3709ad5d.mesh"
+path="res://.godot/imported/Track_Bridge_Curve_3x3.obj-fd25d524b5176a3555cdffe87b47ee95.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Curve_3x3.obj-db3c968dd5ad0748431f24ac3709ad5d.mesh"]
+files=["res://.godot/imported/Track_Bridge_Curve_3x3.obj-fd25d524b5176a3555cdffe87b47ee95.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Curve_3x3.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Curve_3x3.obj-db3c968dd5ad0748431f24ac3709ad5d.mesh", "res://.godot/imported/Track_Bridge_Curve_3x3.obj-db3c968dd5ad0748431f24ac3709ad5d.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Curve_3x3.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Curve_3x3.obj-fd25d524b5176a3555cdffe87b47ee95.mesh", "res://.godot/imported/Track_Bridge_Curve_3x3.obj-fd25d524b5176a3555cdffe87b47ee95.mesh"]
 
 [params]
 

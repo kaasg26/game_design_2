@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m5uc2gxvyj31"
-path.s3tc="res://.godot/imported/Gravel040_1K-JPG_Color.jpg-0ddf5da07b9ea01bb0943adba65a220d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Gravel040_1K-JPG_Color.jpg-a5684c1079785c639ef027e5354c5538.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Gravel040_1K-JPG/Gravel040_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Gravel040_1K-JPG_Color.jpg-0ddf5da07b9ea01bb0943adba65a220d.s3tc.ctex"]
+source_file="res://game_design_2/textures/Gravel040_1K-JPG/Gravel040_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Gravel040_1K-JPG_Color.jpg-a5684c1079785c639ef027e5354c5538.s3tc.ctex"]
 
 [params]
 

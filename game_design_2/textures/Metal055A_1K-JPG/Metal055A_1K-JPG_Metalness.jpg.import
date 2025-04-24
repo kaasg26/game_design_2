@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kqwgukecb84f"
-path="res://.godot/imported/Metal055A_1K-JPG_Metalness.jpg-f78cefeba1e926bb6db8ba717f9159f1.ctex"
+path="res://.godot/imported/Metal055A_1K-JPG_Metalness.jpg-f773f7531ce592a3344d67e9c81d56a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Metal055A_1K-JPG/Metal055A_1K-JPG_Metalness.jpg"
-dest_files=["res://.godot/imported/Metal055A_1K-JPG_Metalness.jpg-f78cefeba1e926bb6db8ba717f9159f1.ctex"]
+source_file="res://game_design_2/textures/Metal055A_1K-JPG/Metal055A_1K-JPG_Metalness.jpg"
+dest_files=["res://.godot/imported/Metal055A_1K-JPG_Metalness.jpg-f773f7531ce592a3344d67e9c81d56a4.ctex"]
 
 [params]
 

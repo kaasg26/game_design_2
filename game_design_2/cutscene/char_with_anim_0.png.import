@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo53ttlhuge77"
-path.s3tc="res://.godot/imported/char_with_anim_0.png-39910531b5f1ebbb2d366f7f5fee32c5.s3tc.ctex"
+path.s3tc="res://.godot/imported/char_with_anim_0.png-7b246054fb4eb0a19aad5d951f731c42.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cutscene/char_with_anim_0.png"
-dest_files=["res://.godot/imported/char_with_anim_0.png-39910531b5f1ebbb2d366f7f5fee32c5.s3tc.ctex"]
+source_file="res://game_design_2/cutscene/char_with_anim_0.png"
+dest_files=["res://.godot/imported/char_with_anim_0.png-7b246054fb4eb0a19aad5d951f731c42.s3tc.ctex"]
 
 [params]
 

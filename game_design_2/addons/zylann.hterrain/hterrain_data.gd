@@ -5,12 +5,12 @@
 @tool
 extends Resource
 
-const HT_Grid = preload("./util/grid.gd")
-const HT_Util = preload("./util/util.gd")
-const HT_Errors = preload("./util/errors.gd")
-const HT_Logger = preload("./util/logger.gd")
-const HT_ImageFileCache = preload("./util/image_file_cache.gd")
-const HT_XYZFormat = preload("./util/xyz_format.gd")
+const HT_Grid = preload("res://addons/zylann.hterrain/util/grid.gd")
+const HT_Util = preload("res://addons/zylann.hterrain/util/util.gd")
+const HT_Errors = preload("res://addons/zylann.hterrain/util/errors.gd")
+const HT_Logger = preload("res://addons/zylann.hterrain/util/logger.gd")
+const HT_ImageFileCache = preload("res://addons/zylann.hterrain/util/image_file_cache.gd")
+const HT_XYZFormat = preload("res://addons/zylann.hterrain/util/xyz_format.gd")
 
 # Note: indexes matters for saving, don't re-order
 # TODO Rename "CHANNEL" to "MAP", makes more sense and less confusing with RGBA channels
@@ -1843,4 +1843,3 @@ static func convert_float_heightmap_to_rgb8(src: Image, dst: Image):
 		for x in src.get_width():
 			var h = src.get_pixel(x, y).r
 			dst.set_pixel(x, y, encode_height_to_rgb8_unorm(h))
-

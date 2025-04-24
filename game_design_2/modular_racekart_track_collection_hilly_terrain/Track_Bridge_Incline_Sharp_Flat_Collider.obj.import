@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://v2dyvqgbh05o"
-path="res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-76401233786b1758c1a987f034ffa7b9.mesh"
+path="res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-0876f7fe195a7416a84fcfc4e28b1ee0.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-76401233786b1758c1a987f034ffa7b9.mesh"]
+files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-0876f7fe195a7416a84fcfc4e28b1ee0.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Incline_Sharp_Flat_Collider.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-76401233786b1758c1a987f034ffa7b9.mesh", "res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-76401233786b1758c1a987f034ffa7b9.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Incline_Sharp_Flat_Collider.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-0876f7fe195a7416a84fcfc4e28b1ee0.mesh", "res://.godot/imported/Track_Bridge_Incline_Sharp_Flat_Collider.obj-0876f7fe195a7416a84fcfc4e28b1ee0.mesh"]
 
 [params]
 

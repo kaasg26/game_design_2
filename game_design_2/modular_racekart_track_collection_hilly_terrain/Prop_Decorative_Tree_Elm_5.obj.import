@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://xc0y6w2qj8gq"
-path="res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-6388b54c1557e470f89f723651791c8e.mesh"
+path="res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-45d6c2715e45ad41da75c8d4b728f4aa.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-6388b54c1557e470f89f723651791c8e.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-45d6c2715e45ad41da75c8d4b728f4aa.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Tree_Elm_5.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-6388b54c1557e470f89f723651791c8e.mesh", "res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-6388b54c1557e470f89f723651791c8e.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Tree_Elm_5.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-45d6c2715e45ad41da75c8d4b728f4aa.mesh", "res://.godot/imported/Prop_Decorative_Tree_Elm_5.obj-45d6c2715e45ad41da75c8d4b728f4aa.mesh"]
 
 [params]
 

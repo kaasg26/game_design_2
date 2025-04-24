@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://s3pip1yrekd5"
-path="res://.godot/imported/Prop_Decorative_Rock_3.obj-b490036fd9219eb74db732759ea7244c.mesh"
+path="res://.godot/imported/Prop_Decorative_Rock_3.obj-b496dc3c9bd9153e9400707def3f515b.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Rock_3.obj-b490036fd9219eb74db732759ea7244c.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Rock_3.obj-b496dc3c9bd9153e9400707def3f515b.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Rock_3.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Rock_3.obj-b490036fd9219eb74db732759ea7244c.mesh", "res://.godot/imported/Prop_Decorative_Rock_3.obj-b490036fd9219eb74db732759ea7244c.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Rock_3.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Rock_3.obj-b496dc3c9bd9153e9400707def3f515b.mesh", "res://.godot/imported/Prop_Decorative_Rock_3.obj-b496dc3c9bd9153e9400707def3f515b.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bst6risc5ed0i"
-path="res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-d601bfcf0294be304532fe041cdfb6a1.mesh"
+path="res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-46cfb6cbeb4b033504045a6909055e69.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-d601bfcf0294be304532fe041cdfb6a1.mesh"]
+files=["res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-46cfb6cbeb4b033504045a6909055e69.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Striped_Curve_Double_5x5.obj"
-dest_files=["res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-d601bfcf0294be304532fe041cdfb6a1.mesh", "res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-d601bfcf0294be304532fe041cdfb6a1.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Striped_Curve_Double_5x5.obj"
+dest_files=["res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-46cfb6cbeb4b033504045a6909055e69.mesh", "res://.godot/imported/Track_Striped_Curve_Double_5x5.obj-46cfb6cbeb4b033504045a6909055e69.mesh"]
 
 [params]
 

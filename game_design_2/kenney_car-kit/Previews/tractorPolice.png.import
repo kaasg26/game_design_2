@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmhw00xt7ti8j"
-path="res://.godot/imported/tractorPolice.png-220ba046c2af33f18a67611b319f177a.ctex"
+path="res://.godot/imported/tractorPolice.png-7753ccfe2cfc46ad1d43d4e739ed3bc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_car-kit/Previews/tractorPolice.png"
-dest_files=["res://.godot/imported/tractorPolice.png-220ba046c2af33f18a67611b319f177a.ctex"]
+source_file="res://game_design_2/kenney_car-kit/Previews/tractorPolice.png"
+dest_files=["res://.godot/imported/tractorPolice.png-7753ccfe2cfc46ad1d43d4e739ed3bc2.ctex"]
 
 [params]
 

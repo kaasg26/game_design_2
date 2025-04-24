@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dqtb57u2qigss"
-path="res://.godot/imported/Prop_Track_Bump_Small_Row.obj-bb12767eae793e7267830a28c8c2693e.mesh"
+path="res://.godot/imported/Prop_Track_Bump_Small_Row.obj-af95396dbbf1fc8da404b235ae198d6e.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Track_Bump_Small_Row.obj-bb12767eae793e7267830a28c8c2693e.mesh"]
+files=["res://.godot/imported/Prop_Track_Bump_Small_Row.obj-af95396dbbf1fc8da404b235ae198d6e.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Track_Bump_Small_Row.obj"
-dest_files=["res://.godot/imported/Prop_Track_Bump_Small_Row.obj-bb12767eae793e7267830a28c8c2693e.mesh", "res://.godot/imported/Prop_Track_Bump_Small_Row.obj-bb12767eae793e7267830a28c8c2693e.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Track_Bump_Small_Row.obj"
+dest_files=["res://.godot/imported/Prop_Track_Bump_Small_Row.obj-af95396dbbf1fc8da404b235ae198d6e.mesh", "res://.godot/imported/Prop_Track_Bump_Small_Row.obj-af95396dbbf1fc8da404b235ae198d6e.mesh"]
 
 [params]
 

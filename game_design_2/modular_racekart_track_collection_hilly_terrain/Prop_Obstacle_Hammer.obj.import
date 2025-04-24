@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cqbvcri22y2nq"
-path="res://.godot/imported/Prop_Obstacle_Hammer.obj-f9ac5bf5cbde4fb012ae2240b9dac1be.mesh"
+path="res://.godot/imported/Prop_Obstacle_Hammer.obj-805ccc16018a84bff63a2cd1bd57043b.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Obstacle_Hammer.obj-f9ac5bf5cbde4fb012ae2240b9dac1be.mesh"]
+files=["res://.godot/imported/Prop_Obstacle_Hammer.obj-805ccc16018a84bff63a2cd1bd57043b.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Obstacle_Hammer.obj"
-dest_files=["res://.godot/imported/Prop_Obstacle_Hammer.obj-f9ac5bf5cbde4fb012ae2240b9dac1be.mesh", "res://.godot/imported/Prop_Obstacle_Hammer.obj-f9ac5bf5cbde4fb012ae2240b9dac1be.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Obstacle_Hammer.obj"
+dest_files=["res://.godot/imported/Prop_Obstacle_Hammer.obj-805ccc16018a84bff63a2cd1bd57043b.mesh", "res://.godot/imported/Prop_Obstacle_Hammer.obj-805ccc16018a84bff63a2cd1bd57043b.mesh"]
 
 [params]
 

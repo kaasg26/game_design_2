@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmx2kj488wwkb"
-path.s3tc="res://.godot/imported/city_scene_tokyo_48.jpg-ea533601b97d48deed49ca8e0055f274.s3tc.ctex"
+path.s3tc="res://.godot/imported/city_scene_tokyo_48.jpg-36d1b0b9277c54b83a2597ae6b21c70b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cutscene/city_scene_tokyo_48.jpg"
-dest_files=["res://.godot/imported/city_scene_tokyo_48.jpg-ea533601b97d48deed49ca8e0055f274.s3tc.ctex"]
+source_file="res://game_design_2/cutscene/city_scene_tokyo_48.jpg"
+dest_files=["res://.godot/imported/city_scene_tokyo_48.jpg-36d1b0b9277c54b83a2597ae6b21c70b.s3tc.ctex"]
 
 [params]
 

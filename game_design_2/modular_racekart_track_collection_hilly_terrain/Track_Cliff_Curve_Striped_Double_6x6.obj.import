@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://crwn7m4vhj0xh"
-path="res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-4ae996d5fadd9a80dcaf303644a54236.mesh"
+path="res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-3746c63f8545556f27c77430f15e2899.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-4ae996d5fadd9a80dcaf303644a54236.mesh"]
+files=["res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-3746c63f8545556f27c77430f15e2899.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Cliff_Curve_Striped_Double_6x6.obj"
-dest_files=["res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-4ae996d5fadd9a80dcaf303644a54236.mesh", "res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-4ae996d5fadd9a80dcaf303644a54236.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Cliff_Curve_Striped_Double_6x6.obj"
+dest_files=["res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-3746c63f8545556f27c77430f15e2899.mesh", "res://.godot/imported/Track_Cliff_Curve_Striped_Double_6x6.obj-3746c63f8545556f27c77430f15e2899.mesh"]
 
 [params]
 

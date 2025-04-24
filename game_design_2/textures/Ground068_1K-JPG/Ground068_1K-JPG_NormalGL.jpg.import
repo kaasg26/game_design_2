@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4h0v8pj2e1vu"
-path="res://.godot/imported/Ground068_1K-JPG_NormalGL.jpg-bf69b5e9e54bf1c5dfd9925fe74c5fb3.ctex"
+path="res://.godot/imported/Ground068_1K-JPG_NormalGL.jpg-9ef256f852cc07e573087d416e2aa6f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/Ground068_1K-JPG_NormalGL.jpg-bf69b5e9e54bf1c5dfd9925fe74c5fb3.ctex"]
+source_file="res://game_design_2/textures/Ground068_1K-JPG/Ground068_1K-JPG_NormalGL.jpg"
+dest_files=["res://.godot/imported/Ground068_1K-JPG_NormalGL.jpg-9ef256f852cc07e573087d416e2aa6f0.ctex"]
 
 [params]
 

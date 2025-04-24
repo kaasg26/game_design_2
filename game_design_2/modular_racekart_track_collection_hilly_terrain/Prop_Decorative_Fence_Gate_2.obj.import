@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dkjagb1vnceuo"
-path="res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-cb6beb5c59cb214f919305e94dac322c.mesh"
+path="res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-3bae5e4982313d96f4c4375bb2a558d6.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-cb6beb5c59cb214f919305e94dac322c.mesh"]
+files=["res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-3bae5e4982313d96f4c4375bb2a558d6.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Gate_2.obj"
-dest_files=["res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-cb6beb5c59cb214f919305e94dac322c.mesh", "res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-cb6beb5c59cb214f919305e94dac322c.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Decorative_Fence_Gate_2.obj"
+dest_files=["res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-3bae5e4982313d96f4c4375bb2a558d6.mesh", "res://.godot/imported/Prop_Decorative_Fence_Gate_2.obj-3bae5e4982313d96f4c4375bb2a558d6.mesh"]
 
 [params]
 

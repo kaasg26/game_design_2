@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://br3ovm5fhj20r"
-path="res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-4f69d92979e1007b711a586d579e015a.mesh"
+path="res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-c37546e40233d24cdc293e957f4a96ca.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-4f69d92979e1007b711a586d579e015a.mesh"]
+files=["res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-c37546e40233d24cdc293e957f4a96ca.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Prop_Track_Banner_Finish_Line_Single_Checkered.obj"
-dest_files=["res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-4f69d92979e1007b711a586d579e015a.mesh", "res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-4f69d92979e1007b711a586d579e015a.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Prop_Track_Banner_Finish_Line_Single_Checkered.obj"
+dest_files=["res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-c37546e40233d24cdc293e957f4a96ca.mesh", "res://.godot/imported/Prop_Track_Banner_Finish_Line_Single_Checkered.obj-c37546e40233d24cdc293e957f4a96ca.mesh"]
 
 [params]
 

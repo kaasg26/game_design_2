@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://blmartsvbtf2y"
-path="res://.godot/imported/Terrain_Hill_Side_1x3.obj-be984f30d6152978048f043aa4fca4f5.mesh"
+path="res://.godot/imported/Terrain_Hill_Side_1x3.obj-05a3b0c12d16f87b85391963e80838fe.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Terrain_Hill_Side_1x3.obj-be984f30d6152978048f043aa4fca4f5.mesh"]
+files=["res://.godot/imported/Terrain_Hill_Side_1x3.obj-05a3b0c12d16f87b85391963e80838fe.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Side_1x3.obj"
-dest_files=["res://.godot/imported/Terrain_Hill_Side_1x3.obj-be984f30d6152978048f043aa4fca4f5.mesh", "res://.godot/imported/Terrain_Hill_Side_1x3.obj-be984f30d6152978048f043aa4fca4f5.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Side_1x3.obj"
+dest_files=["res://.godot/imported/Terrain_Hill_Side_1x3.obj-05a3b0c12d16f87b85391963e80838fe.mesh", "res://.godot/imported/Terrain_Hill_Side_1x3.obj-05a3b0c12d16f87b85391963e80838fe.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bsqpawhweb46p"
-path="res://.godot/imported/Track_Bridge_Flat_Supported.obj-3b9ca53c47daa19d65ce000bcbeb1138.mesh"
+path="res://.godot/imported/Track_Bridge_Flat_Supported.obj-38ddede5419b5b172649eecfd22313b5.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Flat_Supported.obj-3b9ca53c47daa19d65ce000bcbeb1138.mesh"]
+files=["res://.godot/imported/Track_Bridge_Flat_Supported.obj-38ddede5419b5b172649eecfd22313b5.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Flat_Supported.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Flat_Supported.obj-3b9ca53c47daa19d65ce000bcbeb1138.mesh", "res://.godot/imported/Track_Bridge_Flat_Supported.obj-3b9ca53c47daa19d65ce000bcbeb1138.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Flat_Supported.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Flat_Supported.obj-38ddede5419b5b172649eecfd22313b5.mesh", "res://.godot/imported/Track_Bridge_Flat_Supported.obj-38ddede5419b5b172649eecfd22313b5.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://wmf8wqe34n68"
-path="res://.godot/imported/Track_Bridge_Start.obj-ba31a239653595a04c16f219a555a268.mesh"
+path="res://.godot/imported/Track_Bridge_Start.obj-da70b02c7cfd5543dfa2e229afda2695.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Track_Bridge_Start.obj-ba31a239653595a04c16f219a555a268.mesh"]
+files=["res://.godot/imported/Track_Bridge_Start.obj-da70b02c7cfd5543dfa2e229afda2695.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Track_Bridge_Start.obj"
-dest_files=["res://.godot/imported/Track_Bridge_Start.obj-ba31a239653595a04c16f219a555a268.mesh", "res://.godot/imported/Track_Bridge_Start.obj-ba31a239653595a04c16f219a555a268.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Track_Bridge_Start.obj"
+dest_files=["res://.godot/imported/Track_Bridge_Start.obj-da70b02c7cfd5543dfa2e229afda2695.mesh", "res://.godot/imported/Track_Bridge_Start.obj-da70b02c7cfd5543dfa2e229afda2695.mesh"]
 
 [params]
 

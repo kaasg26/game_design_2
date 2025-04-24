@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bwmv8vlf7awr4"
-path="res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-a34885cc324b80ff017b235778d39659.mesh"
+path="res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-63ac06ec7e6572d31eaebb49061e72bc.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-a34885cc324b80ff017b235778d39659.mesh"]
+files=["res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-63ac06ec7e6572d31eaebb49061e72bc.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Corner_Outer_4x4.obj"
-dest_files=["res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-a34885cc324b80ff017b235778d39659.mesh", "res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-a34885cc324b80ff017b235778d39659.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Corner_Outer_4x4.obj"
+dest_files=["res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-63ac06ec7e6572d31eaebb49061e72bc.mesh", "res://.godot/imported/Terrain_Hill_Corner_Outer_4x4.obj-63ac06ec7e6572d31eaebb49061e72bc.mesh"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bcfd43d5yrptv"
-path="res://.godot/imported/Terrain_Hill_Esse_3x4.obj-0812bac76bf8a22428faad4c2fdf91d9.mesh"
+path="res://.godot/imported/Terrain_Hill_Esse_3x4.obj-c278cca6f07cc4b1a11a98d4eb59fdaa.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Terrain_Hill_Esse_3x4.obj-0812bac76bf8a22428faad4c2fdf91d9.mesh"]
+files=["res://.godot/imported/Terrain_Hill_Esse_3x4.obj-c278cca6f07cc4b1a11a98d4eb59fdaa.mesh"]
 
-source_file="res://modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Esse_3x4.obj"
-dest_files=["res://.godot/imported/Terrain_Hill_Esse_3x4.obj-0812bac76bf8a22428faad4c2fdf91d9.mesh", "res://.godot/imported/Terrain_Hill_Esse_3x4.obj-0812bac76bf8a22428faad4c2fdf91d9.mesh"]
+source_file="res://game_design_2/modular_racekart_track_collection_hilly_terrain/Terrain_Hill_Esse_3x4.obj"
+dest_files=["res://.godot/imported/Terrain_Hill_Esse_3x4.obj-c278cca6f07cc4b1a11a98d4eb59fdaa.mesh", "res://.godot/imported/Terrain_Hill_Esse_3x4.obj-c278cca6f07cc4b1a11a98d4eb59fdaa.mesh"]
 
 [params]
 

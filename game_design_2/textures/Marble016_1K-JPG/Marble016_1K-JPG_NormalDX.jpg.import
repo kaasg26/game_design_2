@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnd0f8kxmfprk"
-path="res://.godot/imported/Marble016_1K-JPG_NormalDX.jpg-d607bb4abdfd57c8e94807d363ddffdf.ctex"
+path="res://.godot/imported/Marble016_1K-JPG_NormalDX.jpg-d4a004250114d2082c003df84351f290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Marble016_1K-JPG/Marble016_1K-JPG_NormalDX.jpg"
-dest_files=["res://.godot/imported/Marble016_1K-JPG_NormalDX.jpg-d607bb4abdfd57c8e94807d363ddffdf.ctex"]
+source_file="res://game_design_2/textures/Marble016_1K-JPG/Marble016_1K-JPG_NormalDX.jpg"
+dest_files=["res://.godot/imported/Marble016_1K-JPG_NormalDX.jpg-d4a004250114d2082c003df84351f290.ctex"]
 
 [params]
 

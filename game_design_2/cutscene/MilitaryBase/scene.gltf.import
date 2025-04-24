@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://q03h1yi1wkc1"
-path="res://.godot/imported/scene.gltf-fb946aabfac8c6c2c84fe4a8e3620607.scn"
+valid=false
 
 [deps]
 
-source_file="res://cutscene/MilitaryBase/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-fb946aabfac8c6c2c84fe4a8e3620607.scn"]
+source_file="res://game_design_2/cutscene/MilitaryBase/scene.gltf"
 
 [params]
 
