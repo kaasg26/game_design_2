@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xpsa2omid7ck"
+uid="uid://m6rxp7d5aamu"
 path="res://.godot/imported/carrier_scene_7.png-ff9bc4a17a06b921e3843e23de30595a.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "aed9192baf59a4e09fd3ae53ef8cc45d"
 }
 
 [deps]
@@ -24,7 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
