@@ -17,6 +17,8 @@ func do_lap():
 	if laps > 3:
 		await get_tree().create_timer(0.25).timeout
 		OS.alert("You Win") #TODO change level
+	else:
+		$Label2.text = "Lap %d/3" % laps
 
 
 func _ready() -> void:
