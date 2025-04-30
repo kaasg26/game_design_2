@@ -23,6 +23,10 @@ movie_writer/movie_file="C:/Users/kaas.g/Desktop/game_design_2/cutscene_1.tscn"
 
 enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 ui_left={
@@ -97,3 +101,7 @@ walk={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[xr]
+
+shaders/enabled=true
