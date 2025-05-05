@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://df64u5rc14t1a" path="res://Vr_final/Vr_Starting_Area_FP.tscn" id="1_ynm3w"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_cg26t"]
 [ext_resource type="PackedScene" uid="uid://unjfdbkd4v87" path="res://Vr_final/VRplayer.tscn" id="3_vvf78"]
-[ext_resource type="Texture2D" path="res://Vr_final/doors_-_asset/textures/Material_baseColor.png" id="4_jcayj"]
+[ext_resource type="Texture2D" uid="uid://b0sdao5wk0xws" path="res://Vr_final/Models(VR)/doors_-_asset/textures/Material_baseColor.png" id="4_jcayj"]
 [ext_resource type="PackedScene" uid="uid://d2olq2rvsxihr" path="res://Vr_final/Models(VR)/hanging_sign/scene.gltf" id="5_qg76x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kgj6f"]
