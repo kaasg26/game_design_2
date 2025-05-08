@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtiv8qvbk8270"]
+
+[ext_resource type="PackedScene" uid="uid://1ijp4uj3jcrw" path="res://Vr_final/old_wooden_table.glb" id="1_mrucv"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mrucv"]
+points = PackedVector3Array(-1.51121, -3.15013, -2.71121, -1.59952, -0.0884149, -2.95853, 1.5109, -3.15013, -2.71121, -1.51121, -3.15013, 2.71064, -1.59952, 0.0881431, -2.95853, 1.5992, -0.0884149, -2.95853, -1.59952, -0.0884149, 2.95853, 1.5109, -3.15013, 2.71064, 1.5992, 0.0881431, -2.95853, -1.59952, 0.0881431, 2.95853, 1.5992, -0.0884149, 2.95853, 1.5992, 0.0881431, 2.95853)
+
+[node name="woodTable" instance=ExtResource("1_mrucv")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_mrucv")
