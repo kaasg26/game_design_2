@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://jjo6cqpqbf8v" path="res://goal.gd" id="1_kshk4"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huuju"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6k3qi"]
 transparency = 1
 albedo_color = Color(0.0745098, 1, 0.0980392, 0.415686)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_rmp53"]
-material = SubResource("StandardMaterial3D_huuju")
+material = SubResource("StandardMaterial3D_6k3qi")
 top_radius = 4.0
 bottom_radius = 4.0
 height = 10.0
