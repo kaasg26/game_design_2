@@ -250,6 +250,7 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
 
 [node name="VRplayer" parent="." instance=ExtResource("3_vvf78")]
 transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -8, 3.5, -3)
+world_scale = 2.0
 
 [node name="Door_BB" type="Node3D" parent="."]
 transform = Transform3D(-1.09278e-07, 2.5, 1.09278e-07, 0, -1.09278e-07, 2.5, 2.5, 1.09278e-07, 4.77671e-15, -3, 2.5, 2.7)

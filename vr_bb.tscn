@@ -1,5 +1,6 @@
-[gd_scene load_steps=53 format=4 uid="uid://nrtt6585wd6f"]
+[gd_scene load_steps=56 format=4 uid="uid://nrtt6585wd6f"]
 
+[ext_resource type="Script" uid="uid://dmfr51q0cc17n" path="res://vr_bb.gd" id="1_d0cx3"]
 [ext_resource type="PackedScene" uid="uid://qnfqnxmy5os0" path="res://Vr_final/room_for_games.tscn" id="1_l7oxa"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_ni3bw"]
 [ext_resource type="PackedScene" uid="uid://unjfdbkd4v87" path="res://Vr_final/VRplayer.tscn" id="3_qfk8r"]
@@ -211,7 +212,16 @@ height = 0.2
 height = 0.2
 radius = 0.2
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28len"]
+albedo_color = Color(0.370364, 0.370364, 0.370364, 1)
+metallic = 1.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_d0cx3"]
+material = SubResource("StandardMaterial3D_28len")
+size = Vector3(0.3, 0.3, 0.8)
+
 [node name="vr_BB" type="Node3D"]
+script = ExtResource("1_d0cx3")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_28len")
@@ -226,6 +236,7 @@ shadow_enabled = true
 
 [node name="VRplayer" parent="." instance=ExtResource("3_qfk8r")]
 transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -2, 2, -0.17)
+world_scale = 2.0
 
 [node name="BasketBall" parent="." instance=ExtResource("4_akcrd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.17)
@@ -386,3 +397,11 @@ mesh = SubResource("CylinderMesh_28len")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VrScore"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 2.4, -0.17)
 shape = SubResource("CylinderShape3D_d0cx3")
+
+[node name="lblScore" type="Label3D" parent="."]
+transform = Transform3D(0.5, 0.365998, -0.784886, 0, 0.906308, 0.422618, 0.866025, -0.211309, 0.453154, 0.1, 1.35, -0.9)
+text = "Score: 0"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0.2, 1.3, -0.9)
+mesh = SubResource("PrismMesh_d0cx3")
