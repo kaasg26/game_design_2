@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_1v52o"]
 
 [node name="XROrigin3D" type="XROrigin3D"]
-world_scale = 2.0
+world_scale = 2.1
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 
