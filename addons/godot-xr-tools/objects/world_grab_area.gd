@@ -62,3 +62,4 @@ func let_go(_by: Node3D, _p_linear_velocity: Vector3, _p_angular_velocity: Vecto
 # Get the grab handle
 func get_grab_handle(p: Node3D) -> Node3D:
 	return grab_locations.get(p.get_instance_id())
+	
