@@ -63,5 +63,3 @@ func let_go(_by: Node3D, _p_linear_velocity: Vector3, _p_angular_velocity: Vecto
 func get_grab_handle(p: Node3D) -> Node3D:
 	return grab_locations.get(p.get_instance_id())
 	
-func _on_grabbed():
-	get_tree().change_scene_to_file("res://Vr_final/vr_bb.tscn")
