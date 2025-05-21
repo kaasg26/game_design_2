@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt3nw8fa2hc4j"]
+
+[ext_resource type="PackedScene" uid="uid://8oxlmo4ignw8" path="res://Vr_final/Models(VR)/6_props/scene.gltf" id="1_vesfo"]
+
+[node name="6Props" instance=ExtResource("1_vesfo")]
