@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://dtufrtdp8bxnj"]
+[gd_scene load_steps=34 format=4 uid="uid://dtufrtdp8bxnj"]
 
 [ext_resource type="Script" uid="uid://rpoel0ipronu" path="res://Vr_final/vr_final_project.gd" id="1_lmirx"]
 [ext_resource type="PackedScene" uid="uid://df64u5rc14t1a" path="res://Vr_final/Vr_Starting_Area_FP.tscn" id="1_ynm3w"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://unjfdbkd4v87" path="res://Vr_final/VRplayer.tscn" id="3_vvf78"]
 [ext_resource type="Texture2D" uid="uid://b0sdao5wk0xws" path="res://Vr_final/Models(VR)/doors_-_asset/textures/Material_baseColor.png" id="4_jcayj"]
 [ext_resource type="PackedScene" uid="uid://d2olq2rvsxihr" path="res://Vr_final/Models(VR)/hanging_sign/scene.gltf" id="5_qg76x"]
+[ext_resource type="PackedScene" uid="uid://c8dcjsvplatky" path="res://goal.tscn" id="7_lmirx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kgj6f"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -235,6 +236,16 @@ data = PackedVector3Array(0.0395, 0.1179, 0.3407, 0.0395, 0.2273, -0.3407, 0.039
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcayj"]
 albedo_color = Color(0.67069, 0.67069, 0.67069, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkgxr"]
+transparency = 1
+albedo_color = Color(0, 1, 1, 0.117647)
+
+[sub_resource type="BoxMesh" id="BoxMesh_clmgv"]
+material = SubResource("StandardMaterial3D_hkgxr")
+size = Vector3(2.5, 6, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_271dq"]
+
 [node name="VR_final_project" type="Node3D"]
 script = ExtResource("1_lmirx")
 
@@ -358,3 +369,15 @@ size = Vector3(12.9793, 0.499298, 10.8327)
 material = SubResource("StandardMaterial3D_jcayj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Goal1" parent="." instance=ExtResource("7_lmirx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 2.6)
+next_level = "vr_bb"
+
+[node name="MeshInstance3D" parent="Goal1" index="0"]
+mesh = SubResource("BoxMesh_clmgv")
+
+[node name="CollisionShape3D" parent="Goal1" index="1"]
+shape = SubResource("BoxShape3D_271dq")
+
+[editable path="Goal1"]

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="2_ojcpv"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_1v52o"]
 
-[node name="XROrigin3D" type="XROrigin3D"]
+[node name="XROrigin3D" type="XROrigin3D" groups=["Player"]]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 
