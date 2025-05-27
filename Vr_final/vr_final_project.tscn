@@ -236,12 +236,12 @@ data = PackedVector3Array(0.0395, 0.1179, 0.3407, 0.0395, 0.2273, -0.3407, 0.039
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcayj"]
 albedo_color = Color(0.67069, 0.67069, 0.67069, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkgxr"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmirx"]
 transparency = 1
 albedo_color = Color(0, 1, 1, 0.117647)
 
 [sub_resource type="BoxMesh" id="BoxMesh_clmgv"]
-material = SubResource("StandardMaterial3D_hkgxr")
+material = SubResource("StandardMaterial3D_lmirx")
 size = Vector3(2.5, 6, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_271dq"]
@@ -381,4 +381,15 @@ mesh = SubResource("BoxMesh_clmgv")
 [node name="CollisionShape3D" parent="Goal1" index="1"]
 shape = SubResource("BoxShape3D_271dq")
 
+[node name="Goal2" parent="." instance=ExtResource("7_lmirx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.3, 2.6)
+next_level = "vr_sb"
+
+[node name="MeshInstance3D" parent="Goal2" index="0"]
+mesh = SubResource("BoxMesh_clmgv")
+
+[node name="CollisionShape3D" parent="Goal2" index="1"]
+shape = SubResource("BoxShape3D_271dq")
+
 [editable path="Goal1"]
+[editable path="Goal2"]

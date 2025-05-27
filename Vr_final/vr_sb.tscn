@@ -695,4 +695,3 @@ shape = SubResource("ConcavePolygonShape3D_0008s")
 
 [node name="XROrigin3D" parent="." instance=ExtResource("30_waxqu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 2, 2)
-world_scale = 2.0

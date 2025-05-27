@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_ny311"]
 
 [node name="XROrigin3D" type="XROrigin3D" groups=["Player"]]
-world_scale = 2.0
+world_scale = 1.15
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 
