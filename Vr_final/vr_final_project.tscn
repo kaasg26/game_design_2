@@ -245,6 +245,7 @@ material = SubResource("StandardMaterial3D_hkgxr")
 size = Vector3(2.5, 6, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_271dq"]
+size = Vector3(2.5, 6, 0.5)
 
 [node name="VR_final_project" type="Node3D"]
 script = ExtResource("1_lmirx")

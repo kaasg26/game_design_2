@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://unjfdbkd4v87"]
+[gd_scene load_steps=6 format=3 uid="uid://unjfdbkd4v87"]
 
 [ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="1_yu5ic"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_ny311"]
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="2_ojcpv"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_1v52o"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_ny311"]
 
 [node name="XROrigin3D" type="XROrigin3D" groups=["Player"]]
+world_scale = 2.0
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 
@@ -21,5 +23,7 @@ strafe = true
 tracker = &"right_hand"
 
 [node name="RightHand" parent="rightController" instance=ExtResource("2_ojcpv")]
+
+[node name="MovementTurn" parent="rightController/RightHand" instance=ExtResource("4_ny311")]
 
 [node name="PlayerBody" parent="." instance=ExtResource("4_1v52o")]
