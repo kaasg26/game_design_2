@@ -612,4 +612,8 @@ mesh = SubResource("SphereMesh_8fc7b")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_v3eeo")
 
+[node name="lblScore" type="Label3D" parent="."]
+transform = Transform3D(1.75, 0, 0, 0, 1.72341, -0.303884, 0, 0.303884, 1.72341, 0, 3.2, -3.4)
+text = "Score: 0"
+
 [editable path="Goal2"]
