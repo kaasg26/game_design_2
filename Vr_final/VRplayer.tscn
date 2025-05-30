@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="6_11h0p"]
 
 [node name="XROrigin3D" type="XROrigin3D" groups=["Player"]]
+world_scale = 1.1
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 

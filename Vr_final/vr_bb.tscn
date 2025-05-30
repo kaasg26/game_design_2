@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://nrtt6585wd6f"]
+[gd_scene load_steps=35 format=4 uid="uid://nrtt6585wd6f"]
 
 [ext_resource type="Script" uid="uid://dmfr51q0cc17n" path="res://Vr_final/vr_bb.gd" id="1_7igel"]
 [ext_resource type="PackedScene" uid="uid://qnfqnxmy5os0" path="res://Vr_final/room_for_games.tscn" id="2_im80u"]
@@ -24,6 +24,9 @@ sky_material = SubResource("ProceduralSkyMaterial_akcrd")
 background_mode = 2
 sky = SubResource("Sky_6sb6g")
 tonemap_mode = 2
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_im80u"]
+bounce = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7igel"]
 albedo_color = Color(0.710425, 0.303564, 0, 1)
@@ -173,6 +176,7 @@ transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 
 [node name="BasketBall" parent="." instance=ExtResource("5_ux05x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, -0.17)
 disable_mode = 2
+physics_material_override = SubResource("PhysicsMaterial_im80u")
 script = ExtResource("6_5we28")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="BasketBall"]
