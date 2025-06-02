@@ -1,19 +1,29 @@
-[gd_scene load_steps=9 format=3 uid="uid://unjfdbkd4v87"]
+[gd_scene load_steps=11 format=3 uid="uid://unjfdbkd4v87"]
 
 [ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="1_yu5ic"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_ny311"]
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="2_ojcpv"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_teiti"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_1v52o"]
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="4_b5gry"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_ny311"]
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="6_11h0p"]
+[ext_resource type="Script" uid="uid://d4nqbjcnmhs24" path="res://addons/godot-xr-tools/overrides/ground_physics_settings.gd" id="8_11h0p"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_teiti"]
-radius = 0.734079
-height = 2.36451
+[sub_resource type="Resource" id="Resource_b5gry"]
+script = ExtResource("8_11h0p")
+flags = 0
+move_drag = 5.0
+move_traction = 30.0
+stop_on_slope = true
+move_max_slope = 45.0
+jump_max_slope = 45.0
+jump_velocity = 5.0
+bounciness = 0.25
+bounce_threshold = 1.0
+metadata/_custom_type_script = "uid://d4nqbjcnmhs24"
 
 [node name="XROrigin3D" type="XROrigin3D" groups=["Player"]]
-world_scale = 1.0
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 
@@ -27,6 +37,10 @@ strafe = true
 
 [node name="FunctionPickup" parent="leftController" instance=ExtResource("3_teiti")]
 
+[node name="FunctionPointer" parent="leftController" instance=ExtResource("4_b5gry")]
+distance = 1.0
+show_laser = 2
+
 [node name="rightController" type="XRController3D" parent="."]
 tracker = &"right_hand"
 
@@ -38,8 +52,11 @@ tracker = &"right_hand"
 
 [node name="MovementJump" parent="rightController" instance=ExtResource("6_11h0p")]
 order = 30
+jump_button_action = "ax_button"
+
+[node name="FunctionPointer" parent="rightController" instance=ExtResource("4_b5gry")]
+distance = 1.0
+show_laser = 2
 
 [node name="PlayerBody" parent="." groups=["Player"] instance=ExtResource("4_1v52o")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBody"]
-shape = SubResource("CapsuleShape3D_teiti")
+physics = SubResource("Resource_b5gry")
