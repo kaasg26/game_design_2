@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d1sa5ur0m7xqq" path="res://player_3d.tscn" id="1_gia1x"]
 [ext_resource type="Script" uid="uid://bweylmriv21tx" path="res://addons/zylann.hterrain/hterrain.gd" id="2_h7qau"]
-[ext_resource type="Resource" uid="uid://c6kt7fg3k4jh" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
+[ext_resource type="Resource" path="res://terrains/scene_3d/data.hterrain" id="3_n3epc"]
 [ext_resource type="PackedScene" uid="uid://bxdsaqmkyrxgb" path="res://models/japan_market.tscn" id="3_ot6hr"]
 [ext_resource type="Script" uid="uid://bhpnft1ifbiuj" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_ryuxh"]
 [ext_resource type="Texture2D" uid="uid://dpqa0ntx6juut" path="res://textures/Ground068_1K-JPG/Ground068_1K-JPG_Color.jpg" id="7_my5w5"]
