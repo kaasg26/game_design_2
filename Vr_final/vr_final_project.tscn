@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://dtufrtdp8bxnj"]
+[gd_scene load_steps=36 format=4 uid="uid://dtufrtdp8bxnj"]
 
 [ext_resource type="Script" uid="uid://rpoel0ipronu" path="res://Vr_final/vr_final_project.gd" id="1_lmirx"]
 [ext_resource type="PackedScene" uid="uid://df64u5rc14t1a" path="res://Vr_final/Vr_Starting_Area_FP.tscn" id="1_ynm3w"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b0sdao5wk0xws" path="res://Vr_final/Models(VR)/doors_-_asset/textures/Material_baseColor.png" id="4_jcayj"]
 [ext_resource type="PackedScene" uid="uid://d2olq2rvsxihr" path="res://Vr_final/Models(VR)/hanging_sign/scene.gltf" id="5_qg76x"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_lmirx"]
+[ext_resource type="PackedScene" uid="uid://bthgn4hatrkmm" path="res://Vr_final/doorenterexit.tscn" id="8_hkgxr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kgj6f"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -236,6 +237,23 @@ data = PackedVector3Array(0.0395, 0.1179, 0.3407, 0.0395, 0.2273, -0.3407, 0.039
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcayj"]
 albedo_color = Color(0.67069, 0.67069, 0.67069, 1)
 
+[sub_resource type="QuadMesh" id="QuadMesh_hkgxr"]
+resource_local_to_scene = true
+size = Vector2(8, 5)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_clmgv"]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_271dq"]
+transparency = 1
+cull_mode = 2
+albedo_texture = SubResource("ViewportTexture_clmgv")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgg8l"]
+resource_local_to_scene = true
+size = Vector3(8, 5, 0.02)
+
 [node name="VR_final_project" type="Node3D"]
 script = ExtResource("1_lmirx")
 
@@ -360,6 +378,25 @@ material = SubResource("StandardMaterial3D_jcayj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
-[node name="Viewport2Din3D" parent="." instance=ExtResource("7_lmirx")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -3, 2, 2.6)
+[node name="Button1(VP)" parent="." instance=ExtResource("7_lmirx")]
+transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, -3, 2, 2.55)
+screen_size = Vector2(8, 5)
+scene = ExtResource("8_hkgxr")
+viewport_size = Vector2(500, 300)
 scene_properties_keys = PackedStringArray()
+
+[node name="Viewport" parent="Button1(VP)" index="0"]
+size = Vector2i(500, 300)
+
+[node name="Screen" parent="Button1(VP)" index="1"]
+mesh = SubResource("QuadMesh_hkgxr")
+surface_material_override/0 = SubResource("StandardMaterial3D_271dq")
+
+[node name="StaticBody3D" parent="Button1(VP)" index="2"]
+screen_size = Vector2(8, 5)
+viewport_size = Vector2(500, 300)
+
+[node name="CollisionShape3D" parent="Button1(VP)/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_xgg8l")
+
+[editable path="Button1(VP)"]
