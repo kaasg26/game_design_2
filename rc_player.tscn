@@ -312,4 +312,8 @@ label_settings = SubResource("LabelSettings_e5bjn")
 horizontal_alignment = 2
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16382, 0.167817)
 stream = SubResource("AudioStreamMP3_nqw02")
+volume_db = 80.0
+autoplay = true
+doppler_tracking = 2

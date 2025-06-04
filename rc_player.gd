@@ -7,6 +7,8 @@ const HORSE_POWER = 200
 
 var laps = 1
 var checkpoints = [false, false, false, false]
+var Idle = preload("res://assets/audio/Idle.mp3") 
+var Accel = preload("res://assets/audio/Accelaration.mp3")
 
 func reset_checkpoints():
 	checkpoints = [false, false, false, false]
@@ -46,16 +48,25 @@ func _physics_process(delta: float) -> void:
 								  global_position + linear_velocity, delta * 5.0))
 	check_and_right()
 	
+	$AudioStreamPlayer3D.stream = Idle
+	$AudioStreamPlayer3D.play()
+	
 	if accel > 0:
 		var max_dB = 110
 		var dB = clamp(max_dB * abs($backLeft.engine_force/MAX_RPM), -10, max_dB)
 		$AudioStreamPlayer3D.volume_db = dB
+		if $AudioStreamPlayer3D.stream == Idle:
+			$AudioStreamPlayer3D.stop()
+			$AudioStreamPlayer3D.stream = Accel
 		if not $AudioStreamPlayer3D.is_playing():
-	# change the stream to the vroom sound and play 
-			pass
+		
+			$AudioStreamPlayer3D.play()
+
 	else:
 		$AudioStreamPlayer3D.volume_db = 10  # default
-
+		$AudioStreamPlayer3D.stream = Idle
+		$AudioStreamPlayer3D.play()
+		
 
   # change the stream to the idle sound and play
 

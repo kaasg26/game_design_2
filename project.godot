@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Game_Design_2"
-run/main_scene="res://hello.tscn"
+run/main_scene="uid://dtufrtdp8bxnj"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -26,7 +26,7 @@ movie_writer/movie_file="C:/Users/kaas.g/Desktop/game_design_2/cutscene_1.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
 
 [filesystem]
 

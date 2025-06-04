@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b00luksw4f1a1" path="res://rc_player.tscn" id="2_w7q12"]
 [ext_resource type="PackedScene" uid="uid://dtnlhwb0cpqfm" path="res://rc_enemy.tscn" id="3_rjgen"]
 [ext_resource type="PackedScene" uid="uid://bj5ppubh8spdh" path="res://rc_checkpoint.tscn" id="4_hy7tj"]
+[ext_resource type="AudioStream" uid="uid://cxur5k54gk12h" path="res://assets/audio/Idle.mp3" id="6_3tcgs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w7q12"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -17,10 +18,6 @@ sky_material = SubResource("ProceduralSkyMaterial_w7q12")
 background_mode = 2
 sky = SubResource("Sky_rjgen")
 tonemap_mode = 2
-
-[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_5ihun"]
-loop = true
-loop_offset = 0.1
 
 [node name="rc_world_1" type="Node3D"]
 script = ExtResource("1_5ihun")
@@ -81,8 +78,8 @@ checkpoint_index = 2
 transform = Transform3D(1, 9.90927e-07, 1.42109e-14, -9.90927e-07, 1, 1.77636e-15, 0, 0, 1, -0.0491905, -1.95939, -0.674795)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamMP3_5ihun")
-volume_db = -20.0
+stream = ExtResource("6_3tcgs")
+volume_db = -30.0
 
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 

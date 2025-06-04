@@ -8,12 +8,8 @@ var audio_file = "res://assets/audio/RCGame.mp3"
 func _ready():
 	var stream = load(audio_file)
 	audio_player.stream = stream
-	audio_player.play()
+	#audio_player.play()
 	
 	
 func _process(delta):
 	pass
-
-
-func _on_audio_stream_player_finished() -> void:
-	return
