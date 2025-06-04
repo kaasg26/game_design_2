@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwb75uxc01oqa"]
+[gd_scene load_steps=10 format=3 uid="uid://cwb75uxc01oqa"]
 
+[ext_resource type="Script" uid="uid://cprylrhba5qoi" path="res://rc_world_1.gd" id="1_5ihun"]
 [ext_resource type="MeshLibrary" uid="uid://dcmvb87qbtt40" path="res://mesh/rc_tiles_1.tres" id="1_orelr"]
 [ext_resource type="PackedScene" uid="uid://b00luksw4f1a1" path="res://rc_player.tscn" id="2_w7q12"]
 [ext_resource type="PackedScene" uid="uid://dtnlhwb0cpqfm" path="res://rc_enemy.tscn" id="3_rjgen"]
@@ -17,7 +18,12 @@ background_mode = 2
 sky = SubResource("Sky_rjgen")
 tonemap_mode = 2
 
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_5ihun"]
+loop = true
+loop_offset = 0.1
+
 [node name="rc_world_1" type="Node3D"]
+script = ExtResource("1_5ihun")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_hy7tj")
@@ -73,6 +79,12 @@ checkpoint_index = 2
 
 [node name="CollisionShape3D" parent="rc_checkpoint4" index="0"]
 transform = Transform3D(1, 9.90927e-07, 1.42109e-14, -9.90927e-07, 1, 1.77636e-15, 0, 0, 1, -0.0491905, -1.95939, -0.674795)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamMP3_5ihun")
+volume_db = -20.0
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 
 [editable path="rc_checkpoint"]
 [editable path="rc_checkpoint2"]

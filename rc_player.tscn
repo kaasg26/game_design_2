@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://b00luksw4f1a1"]
+[gd_scene load_steps=15 format=4 uid="uid://b00luksw4f1a1"]
 
 [ext_resource type="Script" uid="uid://dhuqfk03c4hme" path="res://rc_player.gd" id="1_nqw02"]
 
@@ -217,6 +217,9 @@ metadata/extras = {
 [sub_resource type="LabelSettings" id="LabelSettings_e5bjn"]
 font_size = 32
 
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_nqw02"]
+loop = true
+
 [node name="rc_player" type="VehicleBody3D" groups=["Player"]]
 mass = 80.0
 script = ExtResource("1_nqw02")
@@ -308,4 +311,5 @@ text = "Lap 1/3"
 label_settings = SubResource("LabelSettings_e5bjn")
 horizontal_alignment = 2
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamMP3_nqw02")
