@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bthgn4hatrkmm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 500.0
+offset_bottom = 300.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 300.0
+color = Color(0, 0.529412, 1, 1)
+
+[node name="Button" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 89.0
+offset_right = 423.0
+offset_bottom = 218.0
+text = "Enter"
